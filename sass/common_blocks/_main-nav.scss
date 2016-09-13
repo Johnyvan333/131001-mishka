@@ -1,0 +1,29 @@
+.main-nav {
+  display: none;
+  position: absolute;
+  width: 320px;
+  z-index: 100;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    display: block;
+    height: 79px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 79px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    background: white;
+    border-bottom: 1px solid #ececec;
+  }
+}

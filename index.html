@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Мишка</title>
 </head>
 
@@ -10,17 +11,16 @@
 
   <header class="index-header">
     <div class="top-panel">
-      <a class="top-logo"></a>
-      <div class="nav-buttons">
-        <button class="nav-buttons__close"></button>
-        <button class="nav-buttons__open"></button>
+      <div class="top-panel__links">
+        <a class="top-logo">mishka</a>
+        <button class="nav-button nav-button--open"></button>
       </div>
       <nav class="main-nav">
-        <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="form.html">Вязание на заказ</a></li>
-          <li><a href="#">Поиск по сайту</a></li>
-          <li><a href="#">Корзина: пока пуста</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </div>
@@ -28,28 +28,28 @@
     <div class="index-header__catalog-block">
       <div class="index-header__catalog-title">Предметы интерьера</div>
     </div>
-    <div class="index-header__catalog-block">
+    <div class="index-header__catalog-block index-header__catalog-block--darken">
       <div class="index-header__catalog-title">Детские игрушки</div>
     </div>
   </header>
 
   <main class="page-main">
     <div class="item-card">
-      <h2>Вязаные корзинки</h2>
+      <h2 class="item-card__header">Вязаные корзинки</h2>
       <div class="item-card__banner">товар недели</div>
       <p class="item-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="item-card__info-table">
-        <tr>
-          <td>Цвет:</td>
-          <td>"Тиффани"/серый</td>
+      <table class="item-table">
+        <tr class="item-table__row">
+          <td class="item-table__data">Цвет:</td>
+          <td class="item-table__data">"Тиффани"/серый</td>
         </tr>
-        <tr>
-          <td>Диаметр:</td>
-          <td>25 см</td>
+        <tr class="item-table__row">
+          <td class="item-table__data">Диаметр:</td>
+          <td class="item-table__data">25 см</td>
         </tr>
-        <tr>
-          <td>Высота:</td>
-          <td>15 см</td>
+        <tr class="item-table__row">
+          <td class="item-table__data">Высота:</td>
+          <td class="item-table__data">15 см</td>
         </tr>
       </table>
       <div class="item-card__image"><img img src="http://placehold.it/260x315"></div>
@@ -97,11 +97,11 @@
 
   <footer class="page-footer">
     <div class="social-block">
-      <a class="instagram" href="#"></a>
-      <a class="facebook" href="#"></a>
-      <a class="twitter" href="#"></a>
+      <a class="social-block__instagram" href="#"></a>
+      <a class="social-block__facebook" href="#"></a>
+      <a class="social-block__twitter" href="#"></a>
     </div>
-    <div class="developer-link"><span>Разработано</span>
+    <div class="page-footer__developer-link"><span>Разработано</span>
       <a href="#"></a>
     </div>
   </footer>

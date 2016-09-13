@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Мишка:каталог</title>
 </head>
 
@@ -10,17 +11,14 @@
 
   <header class="page-header">
     <div class="top-panel">
-      <a class="top-logo"></a>
-      <div class="nav-buttons">
-        <button class="nav-buttons__close"></button>
-        <button class="nav-buttons__open"></button>
-      </div>
+      <a class="top-logo">mishka</a>
+      <button class="nav-button nav-button--open"></button>
       <nav class="main-nav">
-        <ul>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="form.html">Вязание на заказ</a></li>
-          <li><a href="#">Поиск по сайту</a></li>
-          <li><a href="#">Корзина: пока пуста</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--current">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
       </nav>
     </div>
@@ -61,11 +59,11 @@
 
   <footer class="page-footer">
     <div class="social-block">
-      <a class="instagram" href="#"></a>
-      <a class="facebook" href="#"></a>
-      <a class="twitter" href="#"></a>
+      <a class="social-block__instagram" href="#"></a>
+      <a class="social-block__facebook" href="#"></a>
+      <a class="social-block__twitter" href="#"></a>
     </div>
-    <div class="developer-link"><span>Разработано</span>
+    <div class="page-footer__developer-link"><span>Разработано</span>
       <a href="#"></a>
     </div>
   </footer>
