@@ -10,7 +10,8 @@ var server = require("browser-sync").create();
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass()
+    .on("error", sass.logError))
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 1 version",

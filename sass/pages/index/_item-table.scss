@@ -1,0 +1,16 @@
+.item-table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  color: #444;
+  font-size: 15px;
+  line-height: em(20,15);
+  &__row {
+    height: 35px;
+    padding-top: 5px;
+    border-bottom: 1px solid #ececec;
+  }
+  &__data:first-of-type {
+    width: 100px;
+  }
+}
