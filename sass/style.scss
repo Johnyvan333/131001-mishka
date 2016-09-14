@@ -1,5 +1,6 @@
 @import
 'common_blocks/_@mixins_&_@functions',
+'common_blocks/fonts',
 'common_blocks/page-main',
 'common_blocks/btn',
 'common_blocks/header',
@@ -7,13 +8,15 @@
 'common_blocks/top-logo',
 'common_blocks/nav-button',
 'common_blocks/main-nav',
-'common_blocks/footer';
+'common_blocks/footer',
+'common_blocks/social-block';
 
 @import
 'pages/index/advantages',
 'pages/index/block-header',
 'pages/index/comment',
 'pages/index/comments-block',
+'pages/index/comments-buttons',
 'pages/index/contacts',
 'pages/index/index-header',
 'pages/index/item-card',

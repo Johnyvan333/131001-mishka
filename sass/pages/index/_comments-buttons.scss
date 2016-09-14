@@ -1,0 +1,16 @@
+.comments-buttons {
+  @include clearfix;
+  margin-bottom: 30px;
+}
+.comments-btn {
+  float: left;
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  box-sizing: border-box;
+  height: 52px;
+  border: 1px solid #ececec;
+  &--next {
+    border-right: none;
+  };
+}

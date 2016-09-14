@@ -1,0 +1,20 @@
+.comment {
+  &__text {
+    margin: 0;
+    padding: 30px 0;
+    color: #444;
+    font-size: 15px;
+    line-height: em(30, 15);
+  }
+  &__author {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: em(24, 18);
+  }
+  &__nickname {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 18px;
+    line-height: em(30, 18);
+  }
+}
