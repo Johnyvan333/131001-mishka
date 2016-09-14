@@ -1,3 +1,117 @@
 .order-form {
-
+  margin: 0;
+  padding: 0 30px 55px;
+  &__about {
+    padding: 10px 0;
+    margin: 0 0 20px;
+    color: #444;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: em(24, 13);
+  }
+  &__fieldset {
+    margin: 0;
+    padding: 25px 0 0;
+    border: none;
+    border-top: 1px solid #62d1ba;
+  }
+  &__block-header {
+    margin: 0;
+    padding: 0 25px 0 0;
+    color: #63d1bb;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+  &__type-wrapper {
+    margin-bottom: 25px;
+  }
+  &__color-wrapper {
+    margin-bottom: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: em(20, 17);
+  }
+  &__name-wrapper {
+    margin-bottom: 25px;
+    border-bottom: 2px solid black;
+  }
+  &__name-label {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: em(20, 17);
+  }
+  &__name-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: em(20, 17);
+  }
+  &__phone {
+    padding: 15px 0 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid black;
+  }
+  &__phone-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0 15px;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: em(20, 17);
+  }
+  &__email {
+    padding: 15px 0 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid black;
+  }
+  &__email-input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0 15px;
+    margin: 0;
+    border: none;
+    outline: none;
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: em(20, 17);
+  }
+  &__additional {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  &__additional-textarea {
+    box-sizing: border-box;
+    height: 142px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 18px;
+    color: #444;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: em(20, 17);
+    border: 2px solid black;
+  }
+  &__attention {
+    margin: 0 -4px;
+    margin-bottom: 20px;
+    padding: 0;
+    color: #444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: em(18, 14);
+  }
 }
