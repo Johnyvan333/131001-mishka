@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Мишка</title>
 </head>
@@ -11,16 +12,19 @@
 
   <header class="index-header">
     <div class="top-panel">
-      <div class="top-panel__links">
-        <a class="top-logo">mishka</a>
-        <button class="nav-button nav-button--open"></button>
-      </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--logo">
+            <div class="main-nav__link  main-nav__link--logo main-nav__link--visible">
+              <a class="top-logo">mishka</a>
+              <button class="nav-button nav-button--open"></button>
+            </div>
+          </li>
+          <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__delivery-info">Бесплатная доставка по России</li>
         </ul>
       </nav>
     </div>
@@ -38,20 +42,20 @@
       <h2 class="item-card__header">Вязаные корзинки</h2>
       <div class="item-card__banner">товар недели</div>
       <p class="item-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="item-table">
-        <tr class="item-table__row">
-          <td class="item-table__data">Цвет:</td>
-          <td class="item-table__data">"Тиффани"/серый</td>
-        </tr>
-        <tr class="item-table__row">
-          <td class="item-table__data">Диаметр:</td>
-          <td class="item-table__data">25 см</td>
-        </tr>
-        <tr class="item-table__row">
-          <td class="item-table__data">Высота:</td>
-          <td class="item-table__data">15 см</td>
-        </tr>
-      </table>
+      <ul class="item-table">
+        <li class="item-table__row">
+          <li class="item-table__data">Цвет:</li>
+          <li class="item-table__data">"Тиффани"/серый</li>
+        </li>
+        <li class="item-table__row">
+          <li class="item-table__data">Диаметр:</li>
+          <li class="item-table__data">25 см</li>
+        </li>
+        <li class="item-table__row">
+          <li class="item-table__data">Высота:</li>
+          <li class="item-table__data">15 см</li>
+        </li>
+      </ul>
       <div class="item-card__image"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаная корзинка"></div>
       <div class="item-card__price">Цена: 990 руб.</div>
       <button class="btn">заказать</button>

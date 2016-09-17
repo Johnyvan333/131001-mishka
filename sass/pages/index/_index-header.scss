@@ -1,6 +1,7 @@
 .index-header {
-  width: 320px;
-  background: url('../img/hero-mobile@1x.jpg') 50% 80px #444 no-repeat;
+  margin: 0;
+  padding: 0;
+  background: #eee url('../img/hero-mobile@1x.jpg') 50% 60px no-repeat;
   &__about {
     width: 244px;
     margin: 76px auto 118px;
@@ -24,5 +25,35 @@
     font-size: 19px;
     color: white;
     line-height: 24px;
+  }
+}
+@media #{$tablet-widths} {
+  .index-header {
+    @include clearfix();
+    margin: 0;
+    background: #eee url('../img/hero-tablet@1x.jpg') 50% 85px no-repeat;
+    &__about {
+      width: 500px;
+      margin: 150px auto 360px;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+    &__catalog-block {
+      box-sizing: border-box;
+      width: 43%;
+      margin: 0;
+      margin-left: 7%;
+      height: 120px;
+      float: left;
+      padding: 35px;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      &--darken {
+        margin-left: 0;
+      }
+    }
   }
 }

@@ -1,16 +1,29 @@
 .item-table {
+  display: table;
   width: 100%;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
-  border-collapse: collapse;
   color: #444;
   font-size: 15px;
   line-height: em(20,15);
   &__row {
+    display: table-row;
+  }
+  &__data {
+    display: table-cell;
     height: 35px;
-    padding-top: 5px;
+    padding-top: 10px;
     border-bottom: 1px solid #ececec;
   }
   &__data:first-of-type {
     width: 100px;
+  }
+}
+@media #{$tablet-widths} {
+  .item-table {
+    width: 280px;
+    margin-right: 0;
+    margin-bottom: 60px;
   }
 }

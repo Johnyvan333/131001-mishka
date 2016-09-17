@@ -1,8 +1,6 @@
 .description-block {
-  margin: 0 30px;
-  margin-bottom: 60px;
-  padding: 0 30px;
-  padding-bottom: 30px;
+  margin: 0 30px 60px;
+  padding: 0 0 30px;
   border: 1px solid #ececec;
   &__header {
     margin-left: 60px;
@@ -13,13 +11,11 @@
     line-height: em(24, 17);
   }
   &__video {
-    margin-left: -30px;
     margin-bottom: 30px;
   }
   &__description {
-    width: 185px;
     margin: 0;
-    padding: 0;
+    padding: 0 60px 0 30px;
     margin-bottom: 30px;
     color: #444;
     font-size: 13px;

@@ -2,9 +2,13 @@
   float: right;
   width: 20px;
   height: 14px;
-
   margin: 0;
   padding: 0;
   margin-right: 31px;
   margin-top: 32px;
+}
+@media #{$tablet-widths} {
+  .nav-button {
+    display: none;
+  }
 }
