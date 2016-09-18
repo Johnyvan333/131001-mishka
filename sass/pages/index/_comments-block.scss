@@ -2,3 +2,21 @@
   margin: 0 30px;
   padding: 0 0 30px;
 }
+@media #{$tablet-widths} {
+  .comments-block {
+    margin: 0;
+    padding: 80px 6.5% 140px;
+    background: #fff url('../img/review@1x.jpg') no-repeat 0 0;
+  }
+}
+@media #{$desktop-widths} {
+  .comments-block {
+    margin: 0;
+    margin-left: 50px;
+    padding: 0;
+    padding-left: 175px;
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background: #fff url('../img/review@1x.jpg') no-repeat 0 0;
+  }
+}

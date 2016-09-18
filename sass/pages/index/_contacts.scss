@@ -24,3 +24,48 @@
     width: 180px;
   }
 }
+@media #{$tablet-widths} {
+  .contacts {
+    margin: 0 6.5%;
+    padding: 70px 0 57px;
+    &__header {
+      font-size: 43px;
+      line-height: em(50, 43);
+    }
+    &__wrapper {
+      float: left;
+      display: flex;
+      width: 50%;
+      font-size: 17px;
+      line-height: em(30, 17);
+    }
+    &__title {
+      float: none;
+      margin-right: 25px;
+      width: 20%;
+    }
+    &__content {
+      float: none;
+      width: 45%;
+      min-width: 220px;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .contacts {
+    @include clearfix;
+    padding: 0;
+    margin: 0;
+    padding: 152px 50px 105px 225px;
+    &__header {
+      margin-bottom: 60px;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: em(57, 53);
+    }
+    &__wrapper {
+      float: none;
+      width: 300px;
+    }
+  }
+}

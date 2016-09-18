@@ -22,8 +22,15 @@
 }
 @media #{$tablet-widths} {
   .item-table {
-    width: 280px;
+    width: 42.6%;
+    min-width: 285px;
     margin-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
+  }
+}
+@media #{$desktop-widths} {
+  .item-table {
+    width: 292px;
+    margin-bottom: 80px;
   }
 }

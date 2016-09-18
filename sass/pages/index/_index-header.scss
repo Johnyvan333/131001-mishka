@@ -39,11 +39,13 @@
       font-weight: 700;
       line-height: 50px;
     }
+    &__wrapper {
+      margin: 0 6.5%;
+    }
     &__catalog-block {
       box-sizing: border-box;
-      width: 43%;
+      width: 50%;
       margin: 0;
-      margin-left: 7%;
       height: 120px;
       float: left;
       padding: 35px;
@@ -52,8 +54,26 @@
       font-weight: 700;
       line-height: 30px;
       &--darken {
+        float: right;
         margin-left: 0;
       }
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .index-header {
+    margin: 0;
+    padding: 0;
+    &__about {
+      width: 620px;
+      margin: 0 auto;
+      margin-top: 200px;
+      margin-bottom: 350px;
+      font-size: 53px;
+      line-height: em(57, 53);
+    }
+    &__wrapper {
+      margin: 0 50px;
     }
   }
 }

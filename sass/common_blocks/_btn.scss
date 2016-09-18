@@ -10,3 +10,29 @@
   outline: none;
   border: 2px solid #444;
 }
+@media #{$tablet-widths} {
+  .btn {
+    &--comment {
+      float: right;
+      width: 172px;
+      margin: -300px -140px 0 0;
+    }
+    &--contacts {
+      width: 34%;
+      margin-left: 33%;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .btn {
+    &--comment {
+      width: 175px;
+      margin-top: -270px;
+    }
+    &--contacts {
+      float: left;
+      width: 230px;
+      margin: 0;
+    }
+  }
+}

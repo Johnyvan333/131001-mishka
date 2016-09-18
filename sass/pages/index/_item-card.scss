@@ -38,35 +38,70 @@
 @media #{$tablet-widths} {
   .item-card {
     margin: 0;
-    padding: 50px;
+    padding: 6.5%;
     &__header {
+      display: inline-block;
+      vertical-align: top;
       margin-bottom: 55px;
       width: 430px;
       font-size: 43px;
       font-weight: 700;
-      line-height: 50px;
+      line-height: em(50, 43);
     }
     &__banner {
+      float: right;
       width: 70px;
       margin: 0 30px 0 0;
       font-size: 17px;
     }
     &__description {
-      width: 285px;
-      margin: 0 0 50px;
+      width: 42.6%;
+      min-width: 285px;
+      margin: 0 0 35px;
       font-size: 17px;
       line-height: em(30, 17);
     }
     &__price {
-      width: 285px;
-      margin-bottom: 34px;
+      width: 42.6%;
+      min-width: 285px;
+      margin-bottom: 30px;
     }
     &__image {
-      margin: 0;
+      float: right;
+      width: 333px;
+      margin: -305px 0 0;
       padding: 0;
+      font-size: 0;
     }
     & .btn {
-      width: 285px;
+      width: 42.6%;
+      min-width: 285px;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .item-card {
+    margin: 0;
+    padding: 150px 50px 100px 225px;
+    &__banner {
+      float: left;
+      margin: 0 0 0 -150px;
+      padding: 0;
+    }
+    &__description {
+      width: 292px;
+      margin-bottom: 55px;
+    }
+    &__price {
+      width: 292px;
+      margin-bottom: 77px;
+    }
+    &__image {
+      width: 525px;
+      margin: -490px 0 0;
+    }
+    & .btn {
+      width: 292px;
     }
   }
 }
