@@ -106,12 +106,43 @@
     border: 2px solid black;
   }
   &__attention {
-    margin: 0 -4px;
-    margin-bottom: 20px;
+    margin: 0 -4px 20px;
     padding: 0;
     color: #444;
     font-size: 14px;
     font-weight: 400;
     line-height: em(18, 14);
+  }
+}
+@media #{$tablet-widths} {
+  .order-form {
+    margin: 0;
+    padding: 80px 0 50px;
+    &__about {
+      margin: 0;
+      padding: 0 100px 62px 50px;
+      font-size: 17px;
+      line-height: em(30, 17);
+    }
+    &__fieldset {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      margin: 0;
+      padding: 0 50px;
+      border: none;
+    }
+    &__block-header {
+      width: 166px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid tomato;
+    }
+    &__type-content {
+      width: 400px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid black;
+    }
   }
 }
