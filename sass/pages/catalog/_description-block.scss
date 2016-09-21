@@ -23,3 +23,61 @@
     line-height: em(24, 13);
   }
 }
+@media #{$tablet-widths} {
+  .description-block {
+    padding: 0;
+    margin: 0 50px 63px;
+    display: flex;
+    flex-direction: column;
+    &__header {
+      order: 2;
+      padding: 0;
+      margin: 0 40px 40px;
+      font-size: 20px;
+      line-height: em(24, 20);
+    }
+    &__video {
+      order: 1;
+      margin-bottom: 40px;
+    }
+    &__description {
+      order: 3;
+      padding: 0;
+      margin: 0 40px 40px;
+      font-size: 15px;
+      line-height: em(30, 15);
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .description-block {
+    @include clearfix;
+    display: block;
+    height: 455px;
+    padding: 0;
+    margin-bottom: 105px;
+    &__video {
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 682px;
+      height: 455px;
+      overflow: hidden;
+    }
+    &__header {
+      float: right;
+      width: 150px;
+      margin: 0 140px 40px 0;
+      padding: 0;
+      padding-top: 90px;
+    }
+    &__description {
+      float: right;
+      margin: 0;
+      width: 230px;
+      padding: 0;
+      margin-right: 59px;
+      margin-bottom: 50px;
+    }
+  }
+}

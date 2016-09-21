@@ -11,3 +11,22 @@
     text-align: center;
   }
 }
+@media #{$tablet-widths} {
+  .page-header {
+    &__title {
+      padding-top: 100px;
+      padding-bottom: 75px;
+      font-size: 43px;
+      line-height: em(50, 43);
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .page-header {
+    &__title {
+      padding-bottom: 100px;
+      font-size: 53px;
+      line-height: em(57, 53);
+    }
+  }
+}
