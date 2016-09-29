@@ -23,6 +23,17 @@
     float: right;
     width: 180px;
   }
+  &__email-link {
+    text-decoration: none;
+    color: #444;
+    border-bottom: 1px solid #6bd3be;
+    &:hover {
+      color: #6bd3be;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 @media #{$tablet-widths} {
   .contacts {

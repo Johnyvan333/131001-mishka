@@ -9,6 +9,7 @@
   background: none;
   outline: none;
   border: 2px solid #444;
+  cursor: pointer;
   &--catalog {
     width: 88%;
     margin-left: 6%;
@@ -63,7 +64,7 @@
       margin-right: 60px;
     }
     &--order-form {
-      margin-left: 175px;
+      margin-left: 183px;
     }
   }
 }
