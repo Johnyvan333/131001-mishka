@@ -5,3 +5,17 @@
   font-weight: 700;
   line-height: em(30, 25);
 }
+@media #{$tablet-widths} {
+  .block-header {
+    margin-bottom: 45px;
+    font-size: 43px;
+    line-height: em(50, 42);
+  }
+}
+@media #{$desktop-widths} {
+  .block-header {
+    margin-bottom: 45px;
+    font-size: 53px;
+    line-height: em(57, 53);
+  }
+}

@@ -18,3 +18,22 @@
     line-height: em(30, 18);
   }
 }
+@media #{$tablet-widths} {
+  .comment {
+    padding-right: 160px;
+    &__text {
+      padding: 30px 0 60px;
+      font-size: 17px;
+      line-height: em(30, 17);
+    }
+    &__author-wrapper {
+      float: left;
+    }
+    &__author {
+      margin: 0;
+      padding: 0;
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+}

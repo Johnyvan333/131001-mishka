@@ -1,10 +1,32 @@
 .page-header {
+  margin: 0;
+  padding: 0;
   &__title {
+    margin: 0;
     padding: 75px 0;
     background: #f1f1f1;
     font-size: 27px;
     font-weight: 700;
     line-height: em(30, 27);
     text-align: center;
+  }
+}
+@media #{$tablet-widths} {
+  .page-header {
+    &__title {
+      padding-top: 100px;
+      padding-bottom: 75px;
+      font-size: 43px;
+      line-height: em(50, 43);
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .page-header {
+    &__title {
+      padding-bottom: 100px;
+      font-size: 53px;
+      line-height: em(57, 53);
+    }
   }
 }

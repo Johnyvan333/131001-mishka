@@ -7,3 +7,14 @@
   width: 30px;
   height: 30px;
 }
+@media #{$tablet-widths} {
+  .social-block {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+    text-align: center;
+  }
+}

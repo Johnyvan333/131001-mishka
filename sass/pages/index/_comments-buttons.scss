@@ -14,3 +14,9 @@
     border-right: none;
   };
 }
+@media #{$tablet-widths} {
+  .comments-buttons {
+    float: right;
+    width: 140px;
+  }
+}

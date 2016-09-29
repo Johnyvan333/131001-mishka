@@ -9,4 +9,61 @@
   background: none;
   outline: none;
   border: 2px solid #444;
+  &--catalog {
+    width: 88%;
+    margin-left: 6%;
+  }
+  &:hover {
+    background: #444;
+    color: white;
+  }
+  &:active {
+    color: #7c7c7c;
+  }
+}
+@media #{$tablet-widths} {
+  .btn {
+    &--comment {
+      float: right;
+      width: 172px;
+      margin: -300px -140px 0 0;
+    }
+    &--contacts {
+      width: 34%;
+      margin-left: 33%;
+    }
+    &--catalog {
+      order: 4;
+      width: auto;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 45px;
+    }
+    &--order-form {
+      margin-left: 50px;
+      width: 230px;
+    }
+  }
+}
+@media #{$desktop-widths} {
+  .btn {
+    &--comment {
+      width: 175px;
+      margin-top: -270px;
+    }
+    &--contacts {
+      float: left;
+      width: 230px;
+      margin: 0;
+    }
+    &--catalog {
+      float: right;
+      margin: 0;
+      width: 230px;
+      margin-right: 60px;
+    }
+    &--order-form {
+      margin-left: 175px;
+    }
+  }
 }
