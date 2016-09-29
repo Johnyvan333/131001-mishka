@@ -13,6 +13,13 @@
     width: 88%;
     margin-left: 6%;
   }
+  &:hover {
+    background: #444;
+    color: white;
+  }
+  &:active {
+    color: #7c7c7c;
+  }
 }
 @media #{$tablet-widths} {
   .btn {
@@ -32,6 +39,10 @@
       margin-right: 40px;
       margin-bottom: 45px;
     }
+    &--order-form {
+      margin-left: 50px;
+      width: 230px;
+    }
   }
 }
 @media #{$desktop-widths} {
@@ -50,6 +61,9 @@
       margin: 0;
       width: 230px;
       margin-right: 60px;
+    }
+    &--order-form {
+      margin-left: 175px;
     }
   }
 }
