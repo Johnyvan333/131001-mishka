@@ -71,7 +71,7 @@
     }
   }
   &__color-input:checked ~ &__color-label::before {
-    background: #000;
+    background: url('../img/icon-tick.svg') 50% 50% no-repeat;
   }
   &__type-wrapper {
     margin-bottom: 25px;

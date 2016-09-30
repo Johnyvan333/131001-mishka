@@ -1,6 +1,7 @@
 .comments-block {
-  margin: 0 30px;
-  padding: 0 0 30px;
+  margin: 0;
+  padding: 0 30px 30px;
+  background: url('../img/bg-zigzag-line.svg') 0 100% repeat-x;
 }
 @media #{$tablet-widths} {
   .comments-block {

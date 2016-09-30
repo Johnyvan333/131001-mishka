@@ -16,14 +16,27 @@
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
             <div class="main-nav__link  main-nav__link--logo main-nav__link--visible">
-              <a class="top-logo">mishka</a>
-              <button class="nav-button nav-button--open"></button>
+              <a class="top-logo"></a>
+              <button class="nav-button">
+
+                <svg class="nav-button__open-svg main-nav__closed" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewbox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512"
+                    xml:space="preserve">
+                  <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 " />
+                </svg>
+
+                <svg class="nav-button__close-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewbox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+                  <rect fill="#231F20" width="19.958" height="2" />
+                  <rect y="6" fill="#231F20" width="19.958" height="2" />
+                  <rect y="12" fill="#231F20" width="19.958" height="2" />
+                </svg>
+
+              </button>
             </div>
           </li>
-          <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item main-nav__item--form"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--catalog main-nav__closed"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form main-nav__closed"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search main-nav__closed"><a class="main-nav__link main-nav__link--search" href="#"><i class="icon icon--search"></i>Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart main-nav__closed"><a class="main-nav__link main-nav__link--cart" href="#"><i class="icon icon--cart"></i>Корзина: пока пуста</a></li>
           <li class="main-nav__item main-nav__item--new-products"><a class="main-nav__link main-nav__link--new-products" href="#">Новые поступления</a></li>
           <li class="main-nav__item main-nav__item--sale"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
           <li class="main-nav__delivery-info">Бесплатная доставка по России</li>
@@ -33,10 +46,10 @@
     <h1 class="index-header__about">Милые штуки ручной работы для дома</h1>
     <div class="index-header__wrapper">
       <a class="index-header__catalog-block">
-        <div href="#" class="index-header__catalog-title">Предметы интерьера</div>
+        <div href="#" class="index-header__catalog-title">Предметы интерьера<i class="icon icon--interior"></i></div>
       </a>
       <a class="index-header__catalog-block index-header__catalog-block--darken">
-        <div href="#" class="index-header__catalog-title">Детские игрушки</div>
+        <div href="#" class="index-header__catalog-title">Детские игрушки<i class="icon icon--toy"></i></div>
       </a>
     </div>
   </header>
@@ -74,14 +87,14 @@
       <h3 class="block-header">Коротко о нас:</h3>
       <ul class="advantages__list">
         <div class="advantages__list-group">
-          <li class="advantages__item">Экологически чистые материалы</li>
-          <li class="advantages__item">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item"><i class="icon icon--feature-1"></i>Экологически чистые материалы</li>
+          <li class="advantages__item"><i class="icon icon--feature-3"></i>Скандинавский стиль по российской цене</li>
+          <li class="advantages__item"><i class="icon icon--feature-5"></i>Увеличивает лайки на фотографиях</li>
         </div>
         <div class="advantages__list-group">
-          <li class="advantages__item">Связано вручную с любовью и умилением</li>
-          <li class="advantages__item">Поддержка отечественного производителя</li>
-          <li class="advantages__item">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item"><i class="icon icon--feature-2"></i>Связано вручную с любовью и умилением</li>
+          <li class="advantages__item"><i class="icon icon--feature-4"></i>Поддержка отечественного производителя</li>
+          <li class="advantages__item"><i class="icon icon--feature-6"></i>Поставляется в подарочной упаковке</li>
         </div>
       </ul>
     </div>
@@ -95,13 +108,13 @@
         </div>
       </div>
       <div class="comments-buttons">
-        <div class="comments-btn comments-btn--next"></div>
-        <div class="comments-btn comments-btn--prev"></div>
+        <div class="comments-btn comments-btn--next"><i class="icon icon--next"></i></div>
+        <div class="comments-btn comments-btn--prev"><i class="icon icon--prev"></i></div>
       </div>
       <button class="btn btn--comment">написать</button>
     </div>
     <div class="contacts">
-      <h4 class="contacts__header">Контакты</h4>
+      <h4 class="contacts__header">Контакты<i class="icon icon--flag"></i></h4>
       <div class="contacts__wrapper">
         <div class="contacts__title">e-mail:</div>
         <div class="contacts__content"><a href="#" class="contacts__email-link">info@mimimishkashop.ru</a></div>
@@ -124,12 +137,19 @@
   <footer class="page-footer">
     <a class="down-logo">mishka</a>
     <div class="social-block">
-      <a class="social-link social-link--instagram" href="#">InG</a>
-      <a class="social-link social-link--facebook" href="#">FB</a>
-      <a class="social-link social-link--twitter" href="#">Tw</a>
+      <a class="social-link icon icon--instagram" href="#">InG</a>
+      <a class="social-link icon icon--facebook" href="#">FB</a>
+      <a class="social-link icon icon--twitter" href="#">Tw</a>
     </div>
     <div class="page-footer__developer-link"><span>Разработано</span>
-      <a href="#"></a>
+      <a href="#">
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewbox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"
+          />
+        </svg>
+
+      </a>
     </div>
   </footer>
 

@@ -37,8 +37,10 @@
 }
 @media #{$tablet-widths} {
   .contacts {
-    margin: 0 6.5%;
-    padding: 70px 0 57px;
+    margin: 0;
+    padding: 70px 6.5% 57px;
+    background: url('../img/bg-zigzag-line.svg') 0 0 repeat-x;
+    background-size: 110%;
     &__header {
       font-size: 43px;
       line-height: em(50, 43);

@@ -3,9 +3,13 @@
   width: 20px;
   height: 14px;
   margin: 0;
-  padding: 0;
-  margin-right: 31px;
-  margin-top: 32px;
+  padding: 20px;
+  margin-right: 41px;
+  margin-top: 12px;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 @media #{$tablet-widths} {
   .nav-button {

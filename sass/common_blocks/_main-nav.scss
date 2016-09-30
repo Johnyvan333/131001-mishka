@@ -37,6 +37,9 @@
       display: block;
     }
   }
+  &__closed {
+    display: none;
+  }
 }
 @media #{$tablet-widths} {
   .main-nav {

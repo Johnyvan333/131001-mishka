@@ -1,5 +1,6 @@
 .item-card {
-  padding: 30px;
+  padding: 30px 30px 50px;
+  background: url('../img/bg-zigzag-line.svg') 0 100% repeat-x;
   &__header {
     margin: 0;
     padding: 0;
@@ -39,6 +40,8 @@
   .item-card {
     margin: 0;
     padding: 6.5%;
+    background: url('../img/bg-zigzag-line.svg') 0 100% repeat-x;
+    background-size: 110%;
     &__header {
       display: inline-block;
       vertical-align: top;
