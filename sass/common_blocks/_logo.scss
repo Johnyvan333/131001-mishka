@@ -1,17 +1,37 @@
 .top-logo {
-  margin: 0 0 0 40px;
+  display: block;
+  float: left;
+  width: 70%;
+  height: 100%;
+  margin: 0;
   padding: 0;
   text-align: center;
+  background: url('../img/logo-mobile.svg') 75% 50% no-repeat;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.4;
+  }
 }
 .down-logo {
   display: none;
 }
 @media #{$tablet-widths} {
+  .top-logo {
+    background: url('../img/logo-tablet.svg') 75% 50% no-repeat;
+  }
   .down-logo {
     display: block;
     width: 33%;
     margin: 0;
     padding: 0;
     text-align: left;
+  }
+}
+@media #{$desktop-widths} {
+  .top-logo {
+    background: url('../img/logo-desktop.svg') 75% 50% no-repeat;
   }
 }

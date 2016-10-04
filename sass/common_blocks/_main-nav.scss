@@ -36,6 +36,32 @@
     &--visible {
       display: block;
     }
+    &:hover {
+      color: #666;
+    }
+    &:active {
+      color: #b2b2b2;
+    }
+  }
+  &__link--cart svg {
+    fill: #d3d2d2;
+  }
+  &__link--cart:hover svg {
+    fill: #63d1bb;
+  }
+  &__link--cart:active svg {
+    fill: #d6f3ed;
+  }
+  &__link--search {
+    & svg {
+      fill: #d3d2d2;
+      &:hover {
+        fill: #63d1bb;
+      }
+      &:active {
+        fill: #d6f3ed;
+      }
+    }
   }
   &__closed {
     display: none;
@@ -43,6 +69,9 @@
 }
 @media #{$tablet-widths} {
   .main-nav {
+    &__mob {
+      display: block;
+    }
     &__list {
       flex-direction: row;
       flex-wrap: wrap;

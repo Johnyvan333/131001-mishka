@@ -12,18 +12,31 @@
 
   <header class="page-header">
     <div class="top-panel">
-      <nav class="main-nav">
+      <nav class="main-nav" id="mainNav">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--logo">
             <div class="main-nav__link  main-nav__link--logo main-nav__link--visible">
-              <a class="top-logo">mishka</a>
-              <button class="nav-button nav-button--open"></button>
+              <a class="top-logo" href="index.html"></a>
+              <button class="nav-button">
+
+                <svg class="nav-button__open-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.514px" height="20.512px" viewbox="0 0 20.514 20.512" enable-background="new 0 0 20.514 20.512"
+                    xml:space="preserve">
+                  <polygon fill="#231F20" points="20.513,1.414 19.099,0 10.256,8.842 1.414,0 0,1.414 8.842,10.256 0,19.098 1.414,20.512 10.256,11.67 19.099,20.512 20.513,19.098 11.671,10.256 " />
+                </svg>
+
+                <svg class="nav-button__close-svg main-nav__closed" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.958px" height="14px" viewbox="0 0 19.958 14" enable-background="new 0 0 19.958 14" xml:space="preserve">
+                  <rect fill="#231F20" width="19.958" height="2" />
+                  <rect y="6" fill="#231F20" width="19.958" height="2" />
+                  <rect y="12" fill="#231F20" width="19.958" height="2" />
+                </svg>
+
+              </button>
             </div>
           </li>
-          <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item main-nav__item--form"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item main-nav__item--search"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--catalog main-nav__mob"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form main-nav__mob"><a class="main-nav__link main-nav__link--form">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search main-nav__mob"><a class="main-nav__link main-nav__link--search" href="#"><i class="icon icon--search"></i>Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart main-nav__mob"><a class="main-nav__link main-nav__link--cart" href="#"><i class="icon icon--cart"></i>Корзина: пока пуста</a></li>
           <li class="main-nav__item main-nav__item--new-products"><a class="main-nav__link main-nav__link--new-products" href="#">Новые поступления</a></li>
           <li class="main-nav__item main-nav__item--sale"><a class="main-nav__link main-nav__link--sale" href="#">Распродажа</a></li>
           <li class="main-nav__delivery-info">Бесплатная доставка по России</li>
@@ -136,6 +149,8 @@
       </a>
     </div>
   </footer>
+  
+  <script src="js/main.js"></script>
 
 </body>
 
