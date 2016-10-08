@@ -5,12 +5,25 @@
   width: 70%;
   height: 100%;
   margin: 0;
-  padding: 10px 0 0 150px;
+  padding-left: 28%;
+  padding-top: 3%;
   cursor: pointer;
+  &:hover svg {
+    fill: #666;
+  }
+  &:active svg {
+    fill: #b2b2b2;
+  }
   &--desktop {
     display: none;
   }
   &--tablet {
+    display: none;
+  }
+  &--tablet {
+    display: none;
+  }
+  &--desktop {
     display: none;
   }
 }
@@ -18,11 +31,29 @@
   display: none;
 }
 @media #{$tablet-widths} {
+  .top-logo {
+    padding-top: 6%;
+    padding-left: 13%;
+
+    &--mobile {
+      display: none;
+    }
+    &--tablet {
+      display: block;
+    }
+  }
   .down-logo {
     display: block;
     width: 33%;
     margin: 0;
     padding: 0;
     text-align: left;
+    cursor: pointer;
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      fill: #bde2dd;
+    }
   }
 }

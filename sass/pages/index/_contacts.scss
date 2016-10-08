@@ -1,12 +1,15 @@
 .contacts {
   margin: 0 30px;
-  padding: 20px 0 30px;
+  padding: 25px 0 38px;
   &__header {
     margin: 0 0 20px;
-    padding: 10px 0;
+    padding: 6px 0;
     font-size: 18px;
     font-weight: 700;
     line-height: em(30, 18);
+    & svg {
+      display: none;
+    }
   }
   &__wrapper {
     @include clearfix;
@@ -17,15 +20,20 @@
   }
   &__title {
     float: left;
-    width: 60px;
+    width: 77px;
   }
   &__content {
-    float: right;
+    float: left;
     width: 180px;
+  }
+  &__content--address {
+    width: 150px;
+    margin-bottom: 8px;
   }
   &__email-link {
     text-decoration: none;
     color: #444;
+    padding-bottom: 5px;
     border-bottom: 1px solid #6bd3be;
     &:hover {
       color: #6bd3be;

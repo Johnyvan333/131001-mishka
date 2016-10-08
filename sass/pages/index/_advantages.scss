@@ -1,6 +1,6 @@
 .advantages {
   margin: 0 30px;
-  padding: 30px 0 60px;
+  padding: 24px 0 60px;
   &__list {
     list-style: none;
     margin: 0;
@@ -8,10 +8,35 @@
   }
   &__item {
     margin: 0;
-    padding: 65px 0 10px;
+    padding: 32px 0 0;
     font-size: 17px;
     font-weight: 700;
-    line-height: em(24, 17);
+    line-height: em(21, 17);
+    & svg {
+      display: block;
+      margin-bottom: 16px;
+      fill: #59d5bc;
+    }
+    &--1 {
+      width: 180px;
+    }
+    &--2 {
+      width: 200px;
+    }
+    &--3 {
+      width: 180px;
+    }
+    &--4 {
+      width: 220px;
+    }
+    &--5 {
+      & svg {
+        margin-bottom: 30px;
+      }
+    }
+    &--6 {
+      width: 200px;
+    }
   }
 }
 @media #{$tablet-widths} {

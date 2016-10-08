@@ -3,7 +3,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   color: #444;
   font-size: 15px;
   line-height: em(20,15);
@@ -12,12 +12,10 @@
   }
   &__data {
     display: table-cell;
-    height: 35px;
-    padding-top: 10px;
+    height: 30px;
+    padding-top: 9px;
+    padding-right: 24px;
     border-bottom: 1px solid #ececec;
-  }
-  &__data:first-of-type {
-    width: 100px;
   }
 }
 @media #{$tablet-widths} {
