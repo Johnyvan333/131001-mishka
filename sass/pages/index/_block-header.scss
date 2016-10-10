@@ -10,6 +10,9 @@
     margin-bottom: 45px;
     font-size: 43px;
     line-height: em(50, 42);
+    &--advantages {
+      margin-bottom: 0;
+    }
   }
 }
 @media #{$desktop-widths} {

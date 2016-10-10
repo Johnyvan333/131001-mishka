@@ -25,6 +25,18 @@
 @media #{$tablet-widths} {
   .comments-buttons {
     float: right;
-    width: 140px;
+    width: 175px;
+    margin-top: -23px;
+  }
+}
+@media #{$desktop-widths} {
+  .comments-buttons {
+    float: right;
+    width: 175px;
+    margin: 0;
+    margin-right: 50px;
+  }
+  .comments-btn {
+    border: none;
   }
 }

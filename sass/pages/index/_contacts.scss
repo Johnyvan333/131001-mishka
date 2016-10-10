@@ -30,6 +30,9 @@
     width: 150px;
     margin-bottom: 8px;
   }
+  &__address-house {
+    display: block;
+  }
   &__email-link {
     text-decoration: none;
     color: #444;
@@ -46,12 +49,21 @@
 @media #{$tablet-widths} {
   .contacts {
     margin: 0;
-    padding: 70px 6.5% 57px;
+    padding: 70px 6.5% 58px;
     background: url('../img/bg-zigzag-line.svg') 0 0 repeat-x;
-    background-size: 110%;
+    background-size: 100%;
     &__header {
       font-size: 43px;
       line-height: em(50, 43);
+      padding-top: 14px;
+      padding-bottom: 29px;
+      & svg {
+        display: inline-block;
+        float: right;
+        width: 55px;
+        height: 80px;
+        margin-top: -14px;
+      }
     }
     &__wrapper {
       float: left;
@@ -62,14 +74,20 @@
     }
     &__title {
       float: none;
-      margin-right: 25px;
+      margin-right: 11px;
       width: 20%;
     }
     &__content {
       float: none;
       width: 45%;
-      min-width: 220px;
+      &--address {
+        width: 260px;
+        margin-bottom: 26px;
+      }
     }
+    &__address-street {
+    display: block;
+  }
   }
 }
 @media #{$desktop-widths} {
@@ -77,16 +95,31 @@
     @include clearfix;
     padding: 0;
     margin: 0;
-    padding: 152px 50px 105px 225px;
+    padding: 164px 50px 105px 220px;
     &__header {
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       font-size: 53px;
       font-weight: 700;
       line-height: em(57, 53);
+      & svg {
+        float: left;
+        margin-left: -112px;
+        margin-top: -10px;
+      }
     }
     &__wrapper {
       float: none;
+      padding-left: 3px;
       width: 300px;
+    }
+    &__title {
+      margin-right: 25px;
+    }
+    &__title--email {
+      margin-right: 18px;
+    }
+    &__content--address {
+      margin-bottom: 50px;
     }
   }
 }

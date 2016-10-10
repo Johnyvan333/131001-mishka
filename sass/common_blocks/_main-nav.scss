@@ -151,23 +151,23 @@
     }
     &__item--catalog {
       order: 1;
-      width: 20%;
+      width: 20.5%;
     }
     &__item--form {
       order: 2;
-      width: 20%;
+      width: 21.5%;
     }
     &__item--logo {
       order: 3;
-      width: 25%;
+      width: 23%;
     }
     &__item--search {
       order: 4;
-      width: 7%;
+      width: 7.5%;
     }
     &__item--cart {
       order: 5;
-      width: 28%;
+      width: 27.5%;
     }
     &__item--new-products {
       order: 6;
@@ -185,6 +185,8 @@
     }
     &__link {
       box-sizing: border-box;
+      height: 89px;
+      line-height: 89px;
       padding: 0;
       margin: 0;
       width: 100%;
@@ -197,12 +199,16 @@
       border-bottom: 1px solid #ececec;
     }
     &__link--form {
-      padding-left: 50px;
+      padding-left: 33px;
       text-align: left;
       border-bottom: 1px solid #ececec;
     }
     &__link--logo {
       text-align: left;
+    }
+    &__link--search {
+      font-size: 0;
+      padding-top: 10px;
     }
     &__link--cart {
       padding-right: 50px;
@@ -210,12 +216,16 @@
       border-bottom: 1px solid #ececec;
     }
     &__link--new-products {
+      height: 60px;
+      line-height: 60px;
       padding-left: 50px;
       font-size: 15px;
       text-align: left;
     }
     &__link--sale {
-      padding-left: 50px;
+      height: 60px;
+      line-height: 60px;
+      padding-left: 40px;
       font-size: 15px;
       text-align: left;
     }

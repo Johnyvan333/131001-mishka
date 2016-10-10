@@ -26,9 +26,17 @@
     float: right;
     padding: 0;
     margin: 0;
-    margin-top: -400px;
+    margin-top: -405px;
     width: 525px;
     height: 457px;
     overflow: hidden;
+    & svg {
+      position: absolute;
+      left: 40%;
+      top: 36%;
+      width: 21%;
+      height: 22%;
+      fill: white;
+    }
   }
 }
