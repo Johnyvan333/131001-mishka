@@ -349,6 +349,25 @@
       </a>
     </div>
   </footer>
+
+  <div class="modal-cart">
+    <header class="modal-cart__header">
+      добавить в корзину
+    </header>
+    <form class="modal-form" action="#">
+      <header class="modal-form__header">Выберите размер:</header>
+      <input type="radio" class="modal-form__input" name="modalFormSize" id="modalFormS" checked>
+      <input type="radio" class="modal-form__input" name="modalFormSize" id="modalFormM">
+      <input type="radio" class="modal-form__input" name="modalFormSize" id="modalFormL">
+      <div class="modal-form__wrapper">
+        <label for="modalFormS" class="modal-form__label">s</label>
+        <label for="modalFormM" class="modal-form__label">m</label>
+        <label for="modalFormL" class="modal-form__label">l</label>
+      </div>
+      <button class="btn btn--modal" type="submit">добавить</button>
+    </form>
+  </div>
+
   <script src="js/main.js"></script>
 
 </body>

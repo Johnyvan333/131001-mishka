@@ -1,0 +1,81 @@
+.modal-cart {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-bottom: 47px;
+  text-align: center;
+  background: white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 #eee;
+  &__header {
+    width: 150px;
+    margin: 0 auto 25px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: em(30, 25);
+  }
+}
+.modal-form {
+  &__header {
+    margin: 0 auto 28px;
+    color: #444444;
+    font-size: 15px;
+    line-height: 2em;
+  }
+  &__input {
+    display: none;
+  }
+  &__wrapper {
+    width: 260px;
+    margin: 0 auto 31px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label {
+    width: 30%;
+    height: 48px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 48px;
+    border: 2px solid #ececec;
+    cursor: pointer;
+  }
+  &__label:hover {
+    border-color: #c7c7c7;
+  }
+  #modalFormL:checked ~ &__wrapper &__label[for="modalFormL"],
+  #modalFormM:checked ~ &__wrapper &__label[for="modalFormM"],
+  #modalFormS:checked ~ &__wrapper &__label[for="modalFormS"] {
+    border-color: #63d1bb;
+  }
+  & .btn {
+    width: 260px;
+    color: white;
+    background: #63d1bb;
+    border: none;
+    outline: none;
+    &:hover {
+      background-color: darken(#63d1bb, 7%);
+    }
+    &:active {
+      background-color: darken(#63d1bb, 15%);
+    }
+  }
+}
+@media #{$tablet-widths} {
+  .modal-cart {
+    max-width: none;
+    width: 568px;
+  }
+}
