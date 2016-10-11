@@ -18,6 +18,7 @@
     display: none;
   }
   &__link {
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
     display: block;
@@ -25,14 +26,16 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-left: 35px;
     line-height: 79px;
     color: black;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 17px;
     font-weight: 700;
     background: white;
     border-bottom: 1px solid #ececec;
+    cursor: pointer;
     &--visible {
       display: block;
     }
@@ -43,8 +46,16 @@
       color: #b2b2b2;
     }
   }
+  &__link--catalog,
+  &__link--form {
+    padding-left: 75px;
+  }
   &__link--cart svg,
   &__link--search svg {
+    float: left;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 21px;
     fill: #d3d2d2;
   }
   &__link--cart:hover svg,
@@ -114,24 +125,31 @@
     }
     &__link--search {
       font-size: 0;
-      padding-top: 10px;
+      padding-top: 35px;
       border-bottom: 1px solid #ececec;
       border-right: 1px solid #ececec;
+      & svg {
+        margin: 0;
+      }
     }
     &__link--cart {
       padding-right: 15px;
       font-size: 17px;
       border-bottom: 1px solid #ececec;
       & svg {
+        margin: 0;
         margin-right: 28px;
+        padding-top: 35px;
       }
     }
     &__link--catalog {
+      padding-left: 50px;
       height: 60px;
       line-height: 60px;
       font-size: 15px;
     }
     &__link--form {
+      padding-left: 0;
       height: 60px;
       line-height: 60px;
       font-size: 15px;
@@ -193,6 +211,7 @@
       font-size: 17px;
     }
     &__link--catalog {
+      padding-top: 0;
       padding-left: 50px;
       text-align: left;
       border-right: 1px solid #ececec;
@@ -208,12 +227,16 @@
     }
     &__link--search {
       font-size: 0;
-      padding-top: 10px;
+      padding-top: 38px;
+      padding-left: 38px;
     }
     &__link--cart {
       padding-right: 50px;
       text-align: right;
       border-bottom: 1px solid #ececec;
+      & svg {
+        padding-left: 33px;
+      }
     }
     &__link--new-products {
       height: 60px;

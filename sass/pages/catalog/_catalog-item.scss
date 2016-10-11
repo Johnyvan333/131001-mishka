@@ -2,6 +2,26 @@
   width: 260px;
   text-decoration: none;
   color: black;
+  &:hover &__description {
+    box-shadow: 0 5px 10px 0 #888;
+  }
+  &:active &__description {
+    box-shadow: 0 2px 4px 0 #aaa;
+  }
+  &:hover &__price,
+  &:hover &__title {
+    color: #666;
+  }
+  &:active &__price,
+  &:active &__title {
+    color: #b2b2b2;
+  }
+  &:hover &__price svg {
+    fill: #63d1bb;
+  }
+  &:active &__price svg {
+    fill: #d0f1ea;
+  }
   &__img {
     padding: 0;
     margin: 0;
@@ -9,12 +29,12 @@
     font-size: 0;
   }
   &__description {
-    padding: 15px 30px;
+    padding: 15px 27px 24px;
     margin: 0 0 30px;
     border: 1px solid #ededed;
   }
   &__title {
-    padding: 10px 0;
+    padding: 10px 0 6px;
     margin: 0;
     font-size: 17px;
     font-weight: 700;
@@ -35,19 +55,29 @@
     font-size: 15px;
     font-weight: 700;
     line-height: em(24, 15);
+    & svg {
+      float: right;
+      fill: #d3d2d2;
+    }
   }
 }
 @media #{$tablet-widths} {
   .catalog-item {
     margin: 0;
     padding: 0;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     height: 334px;
     width: 100%;
     border: 1px solid #ededed;
+    &:hover &__description {
+      box-shadow: none;
+    }
+    &:active &__description {
+      box-shadow: none;
+    }
     &__img {
       margin: 0;
       padding: 0;
@@ -56,26 +86,33 @@
       font-size: 0;
     }
     &__description {
+      width: 41%;
       padding: 26px 0 0 28px;
       margin: 0;
       border: none;
     }
+    &__description-wrapper {
+      height: 233px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ececec;
+    }
     &__title {
       margin: 0;
-      padding: 0;
-      margin-bottom: 10px;
+      padding: 0 40px 0 0;
+      margin-bottom: 4px;
       font-size: 20px;
       line-height: em(24,20);
     }
     &__info {
       margin: 0 0 20px;
-      padding: 0 0 180px;
+      padding: 0 0 175px;
       font-size: 15px;
       line-height: 2em;
+      border: none;
     }
     &__price {
       margin: 0;
-      padding: 0;
+      padding: 2px 0 0 2px;
       font-size: 17px;
       line-height: em(24, 17);
     }
@@ -88,15 +125,27 @@
     margin: 0 0 57px;
     width: 314px;
     height: auto;
+    &:hover &__description {
+      box-shadow: 0 5px 10px 0 #888;
+    }
+    &:active &__description {
+      box-shadow: 0 2px 4px 0 #aaa;
+    }
     &__img {
-      width: 316px;
-      height: 462px;
+      width: 314px;
+      height: 460px;
     }
     &__description {
+      box-sizing: border-box;
+      width: 100%;
       padding: 27px 27px 0;
     }
     &__description-wrapper {
+      height: auto;
       min-height: 100px;
+    }
+    &__title {
+      width: 93%;
     }
     &__info {
       padding: 0;
@@ -104,9 +153,8 @@
       border: none;
     }
     &__price {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-top: 1px solid #ededed;
+      padding-top: 0;
+      padding-bottom: 27px;
     }
   }
 }

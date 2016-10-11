@@ -3,24 +3,35 @@
   padding: 0 0 30px;
   border: 1px solid #ececec;
   &__header {
-    margin-left: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 23px;
+    margin-bottom: 27px;
     font-size: 17px;
     font-weight: 700;
+    text-align: left;
     line-height: em(24, 17);
+    & span {
+      display: inline-block;
+      vertical-align: top;
+      width: 100px;
+    }
+    & svg {
+      width: 50px;
+      height: 33px;
+      margin-left: 25px;
+      margin-right: 10px;
+    }
   }
   &__video {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
   &__description {
     margin: 0;
-    padding: 0 60px 0 30px;
-    margin-bottom: 30px;
+    padding: 0 40px 0 32px;
+    margin-bottom: 24px;
     color: #444;
     font-size: 13px;
     font-weight: 400;
-    line-height: em(24, 13);
+    line-height: em(24.5, 13);
   }
 }
 @media #{$tablet-widths} {
@@ -32,18 +43,24 @@
     &__header {
       order: 2;
       padding: 0;
-      margin: 0 40px 40px;
+      margin: 0 7px 20px;
       font-size: 20px;
       line-height: em(24, 20);
+      & span {
+        min-width: 300px;
+      }
+      & svg {
+        margin-right: 17px;
+      }
     }
     &__video {
       order: 1;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     &__description {
       order: 3;
       padding: 0;
-      margin: 0 40px 40px;
+      margin: 0 40px 35px;
       font-size: 15px;
       line-height: em(30, 15);
     }
@@ -55,7 +72,7 @@
     display: block;
     height: 455px;
     padding: 0;
-    margin-bottom: 105px;
+    margin-bottom: 102px;
     &__video {
       float: left;
       margin: 0;
@@ -67,17 +84,25 @@
     &__header {
       float: right;
       width: 150px;
-      margin: 0 140px 40px 0;
-      padding: 0;
-      padding-top: 90px;
+      margin: 0 140px 0 0;
+      margin-bottom: 32px;
+      padding: 40px 0 0;
+      & svg {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 17px;
+      }
+      & span {
+        min-width: 150px;
+      }
     }
     &__description {
-      float: right;
+      float: left;
+      width: 250px;
       margin: 0;
-      width: 230px;
+      margin-bottom: 47px;
+      margin-left: 78px;
       padding: 0;
-      margin-right: 59px;
-      margin-bottom: 50px;
     }
   }
 }

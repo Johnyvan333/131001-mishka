@@ -223,41 +223,41 @@
         <div class="order-form__type-content">
           <div class="order-form__type-wrapper">
             <input class="order-form__type-input" type="radio" name="orderType" value="orderType1" id="orderType1" checked>
-            <label class="order-form__type-label" for="orderType1">Аксессуар для интерьера</label>
+            <label class="order-form__type-label" for="orderType1"><span>Аксессуар для интерьера</span></label>
           </div>
           <div class="order-form__type-wrapper">
             <input class="order-form__type-input" type="radio" name="orderType" value="orderType2" id="orderType2">
-            <label class="order-form__type-label" for="orderType2">Детская игрушка</label>
+            <label class="order-form__type-label" for="orderType2"><span>Детская игрушка</span></label>
           </div>
         </div>
       </div>
 
       <div class="order-form__fieldset order-form__color">
-        <header class="order-form__block-header">цвет</header>
+        <header class="order-form__block-header order-form__block-header--color">цвет</header>
         <div class="order-form__color-content">
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor1" id="orderColor1" checked>
-            <label class="order-form__color-label" for="orderColor1">Белый</label>
+            <label class="order-form__color-label" for="orderColor1"><span>Белый</span></label>
           </div>
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor2" id="orderColor2" checked>
-            <label class="order-form__color-label" for="orderColor2">Серый</label>
+            <label class="order-form__color-label" for="orderColor2"><span>Серый</span></label>
           </div>
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor3" id="orderColor3">
-            <label class="order-form__color-label" for="orderColor3">"Тиффани"</label>
+            <label class="order-form__color-label" for="orderColor3"><span>&laquoТиффани&raquo</span></label>
           </div>
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor4" id="orderColor4">
-            <label class="order-form__color-label" for="orderColor4">Черный</label>
+            <label class="order-form__color-label" for="orderColor4"><span>Черный</span></label>
           </div>
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor5" id="orderColor5">
-            <label class="order-form__color-label" for="orderColor5">Розовый</label>
+            <label class="order-form__color-label" for="orderColor5"><span>Розовый</span></label>
           </div>
           <div class="order-form__color-wrapper">
             <input class="order-form__color-input" type="checkbox" name="orderColor6" id="orderColor6">
-            <label class="order-form__color-label" for="orderColor6">Оранжевый</label>
+            <label class="order-form__color-label" for="orderColor6"><span>Оранжевый</span></label>
           </div>
         </div>
       </div>
@@ -284,7 +284,7 @@
         <header class="order-form__block-header order-form__block-header--phone">тел</header>
         <input class="order-form__phone-input" type="tel" name="clientPhone" placeholder="+7 XXX XX XX">
 
-        <svg width="25px" height="24px">
+        <svg width="24px" height="22px">
           <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-phone"></use>
         </svg>
 
@@ -294,18 +294,18 @@
         <header class="order-form__block-header order-form__block-header--email">e-mail</header>
         <input class="order-form__email-input" type="email" name="clientEmail" placeholder="Ваш Email">
 
-        <svg width="32px" height="21px">
+        <svg width="35px" height="30px">
           <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-mail"></use>
         </svg>
 
       </div>
 
       <div class="order-form__fieldset order-form__additional">
-        <header class="order-form__block-header">доп</header>
+        <header class="order-form__block-header order-form__block-header--additional">доп</header>
         <textarea class="order-form__additional-textarea" name="additionalData" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
 
-      <div class="order-form__attention">Все поля обязательны для заполнения</div>
+      <div class="order-form__attention">Все поля<span class="order-form__attention-desktop order-form__attention-desktop--visible"> являются обязательными</span><span class="order-form__attention-desktop order-form__attention-desktop--invisible"> обязательны для заполнения</span></div>
 
       <button type="submit" class="btn btn--order-form">отправить заказ</button>
     </form>
