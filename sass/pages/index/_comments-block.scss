@@ -1,22 +1,23 @@
 .comments-block {
-  margin: 0 30px;
-  padding: 0 0 30px;
+  margin: 0;
+  padding: 0 30px 54px;
+  background: url('../img/bg-zigzag-line.svg') 0 100% repeat-x;
 }
 @media #{$tablet-widths} {
   .comments-block {
     margin: 0;
-    padding: 80px 6.5% 140px;
-    background: #fff url('../img/review@1x.jpg') no-repeat 0 0;
+    padding: 120px 6.5% 140px;
+    background: #fff url('../img/review@1x.jpg') no-repeat 0 40px;
+    @media #{$retina} {
+      background-image: url('../img/review@2x.jpg');
+      background-size: 350px auto;
+    }
   }
 }
 @media #{$desktop-widths} {
   .comments-block {
-    margin: 0;
-    margin-left: 50px;
-    padding: 0;
-    padding-left: 175px;
-    padding-top: 80px;
-    padding-bottom: 150px;
-    background: #fff url('../img/review@1x.jpg') no-repeat 0 0;
+    margin: 0 0 0 50px;
+    padding: 80px 0 205px 175px;
+    background-position: 0 8px;
   }
 }

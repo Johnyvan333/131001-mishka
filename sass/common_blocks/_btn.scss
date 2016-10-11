@@ -9,9 +9,10 @@
   background: none;
   outline: none;
   border: 2px solid #444;
+  cursor: pointer;
   &--catalog {
-    width: 88%;
-    margin-left: 6%;
+    width: 74%;
+    margin-left: 13%;
   }
   &:hover {
     background: #444;
@@ -25,8 +26,8 @@
   .btn {
     &--comment {
       float: right;
-      width: 172px;
-      margin: -300px -140px 0 0;
+      width: 175px;
+      margin: -300px -175px 0 0;
     }
     &--contacts {
       width: 34%;
@@ -49,21 +50,23 @@
   .btn {
     &--comment {
       width: 175px;
-      margin-top: -270px;
+      margin-top: -227px;
+      margin-right: -175px;
     }
     &--contacts {
       float: left;
       width: 230px;
       margin: 0;
+      margin-left: 4px;
     }
     &--catalog {
-      float: right;
+      float: left;
       margin: 0;
       width: 230px;
-      margin-right: 60px;
+      margin-left: 80px;
     }
     &--order-form {
-      margin-left: 175px;
+      margin-left: 225px;
     }
   }
 }

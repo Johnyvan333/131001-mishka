@@ -1,22 +1,42 @@
 .comments-buttons {
   @include clearfix;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
 }
 .comments-btn {
   float: left;
-  padding: 0;
+  padding: 13px 0 0;
   margin: 0;
   width: 50%;
   box-sizing: border-box;
   height: 52px;
+  text-align: center;
   border: 1px solid #ececec;
+  cursor: pointer;
   &--next {
     border-right: none;
-  };
+  }
+  &:hover svg {
+    fill: #666;
+  }
+  &:active svg {
+    fill: #b2b2b2;
+  }
 }
 @media #{$tablet-widths} {
   .comments-buttons {
     float: right;
-    width: 140px;
+    width: 175px;
+    margin-top: -23px;
+  }
+}
+@media #{$desktop-widths} {
+  .comments-buttons {
+    float: right;
+    width: 175px;
+    margin: 0;
+    margin-right: 50px;
+  }
+  .comments-btn {
+    border: none;
   }
 }

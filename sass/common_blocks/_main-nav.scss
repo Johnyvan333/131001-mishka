@@ -18,6 +18,7 @@
     display: none;
   }
   &__link {
+    box-sizing: border-box;
     position: relative;
     z-index: 1;
     display: block;
@@ -25,51 +26,88 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-left: 35px;
     line-height: 79px;
     color: black;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     font-size: 17px;
     font-weight: 700;
     background: white;
     border-bottom: 1px solid #ececec;
+    cursor: pointer;
     &--visible {
       display: block;
     }
+    &:hover {
+      color: #666;
+    }
+    &:active {
+      color: #b2b2b2;
+    }
+  }
+  &__link--catalog,
+  &__link--form {
+    padding-left: 75px;
+  }
+  &__link--cart svg,
+  &__link--search svg {
+    float: left;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 21px;
+    fill: #d3d2d2;
+  }
+  &__link--cart:hover svg,
+  &__link--search:hover svg {
+    fill: #63d1bb;
+  }
+  &__link--cart:active svg,
+  &__link--search:active svg {
+    fill: #d6f3ed;
+  }
+  &__closed {
+    display: none;
   }
 }
 @media #{$tablet-widths} {
   .main-nav {
+    &__mob {
+      display: block;
+    }
     &__list {
       flex-direction: row;
       flex-wrap: wrap;
     }
     &__item--logo {
       order: 1;
-      width: 49%;
+      width: 48.5%;
     }
     &__item--search {
       order: 2;
-      width: 11%;
+      width: 10.5%;
     }
     &__item--cart {
       order: 3;
-      width: 40%;
+      width: 41%;
     }
     &__item--catalog {
       order: 4;
-      width: 25%;
+      width: 29%;
     }
     &__item--form {
       order: 5;
-      width: 25%;
+      width: 18%;
     }
     &__delivery-info {
+      box-sizing: border-box;
       display: block;
       order: 6;
-      width: 50%;
-      height: 88px;
-      line-height: 88px;
+      width: 53%;
+      padding: 0 0 0 70px;
+      text-align: right;
+      height: 60px;
+      line-height: 60px;
       font-size: 15px;
       text-align: center;
     }
@@ -87,16 +125,33 @@
     }
     &__link--search {
       font-size: 0;
+      padding-top: 35px;
       border-bottom: 1px solid #ececec;
       border-right: 1px solid #ececec;
+      & svg {
+        margin: 0;
+      }
     }
     &__link--cart {
+      padding-right: 15px;
       font-size: 17px;
+      border-bottom: 1px solid #ececec;
+      & svg {
+        margin: 0;
+        margin-right: 28px;
+        padding-top: 35px;
+      }
     }
     &__link--catalog {
+      padding-left: 50px;
+      height: 60px;
+      line-height: 60px;
       font-size: 15px;
     }
     &__link--form {
+      padding-left: 0;
+      height: 60px;
+      line-height: 60px;
       font-size: 15px;
     }
   }
@@ -114,23 +169,23 @@
     }
     &__item--catalog {
       order: 1;
-      width: 20%;
+      width: 20.5%;
     }
     &__item--form {
       order: 2;
-      width: 20%;
+      width: 21.5%;
     }
     &__item--logo {
       order: 3;
-      width: 25%;
+      width: 23%;
     }
     &__item--search {
       order: 4;
-      width: 7%;
+      width: 7.5%;
     }
     &__item--cart {
       order: 5;
-      width: 28%;
+      width: 27.5%;
     }
     &__item--new-products {
       order: 6;
@@ -148,37 +203,52 @@
     }
     &__link {
       box-sizing: border-box;
+      height: 89px;
+      line-height: 89px;
       padding: 0;
       margin: 0;
       width: 100%;
       font-size: 17px;
     }
     &__link--catalog {
+      padding-top: 0;
       padding-left: 50px;
       text-align: left;
       border-right: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
     }
     &__link--form {
-      padding-left: 50px;
+      padding-left: 33px;
       text-align: left;
       border-bottom: 1px solid #ececec;
     }
     &__link--logo {
       text-align: left;
     }
+    &__link--search {
+      font-size: 0;
+      padding-top: 38px;
+      padding-left: 38px;
+    }
     &__link--cart {
       padding-right: 50px;
       text-align: right;
       border-bottom: 1px solid #ececec;
+      & svg {
+        padding-left: 33px;
+      }
     }
     &__link--new-products {
+      height: 60px;
+      line-height: 60px;
       padding-left: 50px;
       font-size: 15px;
       text-align: left;
     }
     &__link--sale {
-      padding-left: 50px;
+      height: 60px;
+      line-height: 60px;
+      padding-left: 40px;
       font-size: 15px;
       text-align: left;
     }

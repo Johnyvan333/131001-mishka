@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0 30px 55px;
   &__about {
-    padding: 25px 0;
+    padding: 24px 0;
     margin: 0;
     color: #444;
     font-size: 13px;
@@ -15,7 +15,7 @@
     border: none;
   }
   &__block-header {
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     padding: 0;
     color: #63d1bb;
     font-size: 17px;
@@ -34,6 +34,9 @@
       background: #63d1bb;
     }
   }
+  &__block-header--name {
+    margin-bottom: 30px;
+  }
   &__color-input,
   &__type-input {
     display: none;
@@ -43,48 +46,72 @@
     cursor: pointer;
   }
   &__type-label {
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
     &::before {
-      margin-right: 18px;
+      margin-right: 25px;
       content: '';
       display: inline-block;
-      vertical-align: middle;
-      width: 50px;
-      height: 50px;
+      vertical-align: top;
+      width: 35px;
+      height: 35px;
       border: 2px solid #444;
       border-radius: 50%;
     }
+    & span {
+      display: inline-block;
+      width: 70%;
+      padding-top: 7px;
+    }
+  }
+  &__type-input:checked ~ &__type-label:hover::before,
+  &__type-label:hover::before {
+    border-color: #62d1ba;
   }
   &__type-input:checked ~ &__type-label::before {
     background: #62d1ba;
-    box-shadow: inset 0 0 0 15px white;
+    box-shadow: inset 0 0 0 10px white;
+    border-color: #c7c7c7;
+  }
+  &__color {
+    margin-bottom: 30px;
   }
   &__color-label {
     white-space: nowrap;
     &::before {
-      margin-right: 18px;
+      margin-right: 22px;
       content: '';
       display: inline-block;
       vertical-align: middle;
-      width: 50px;
-      height: 50px;
+      width: 35px;
+      height: 35px;
       border: 2px solid #444;
     }
   }
+  &__color-input:checked ~ &__color-label:hover::before,
+  &__color-label:hover::before {
+    border-color: #62d1ba;
+  }
   &__color-input:checked ~ &__color-label::before {
-    background: #000;
+    border-color: #c7c7c7;
+    background: url('../img/icon-tick.svg') 50% 50% no-repeat;
   }
   &__type-wrapper {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+    font-weight: bold;
   }
   &__color-wrapper {
-    margin-bottom: 40px;
+    margin-bottom: 23px;
     font-size: 17px;
     font-weight: 700;
     line-height: em(20, 17);
   }
   &__name-wrapper {
-    margin-bottom: 25px;
-    border-bottom: 2px solid black;
+    margin-bottom: 22px;
+    &:last-of-type {
+      margin-bottom: 16px;
+    }
   }
   &__name-label {
     display: block;
@@ -102,11 +129,29 @@
     font-size: 17px;
     font-weight: 400;
     line-height: em(20, 17);
+    border-bottom: 2px solid black;
+  }
+  &__name-input:focus,
+  &__name-input:hover {
+    border-color: #62d1ba;
+  }
+  &__name-input:invalid,
+  &__phone-input:invalid,
+  &__email-input:invalid,
+  &__additional-textarea:invalid {
+    border-color: #f0b1b1;
   }
   &__phone {
-    padding: 15px 0 0;
+    position: relative;
+    padding: 13px 0 0;
     margin-bottom: 25px;
-    border-bottom: 2px solid black;
+    & svg {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      fill: #ccc;
+      margin-right: 8px;
+    }
   }
   &__phone-input {
     box-sizing: border-box;
@@ -114,16 +159,31 @@
     padding: 0 0 15px;
     margin: 0;
     border: none;
+    border-bottom: 2px solid black;
     outline: none;
     color: #444;
     font-size: 17px;
     font-weight: 400;
     line-height: em(20, 17);
   }
+  &__phone:hover svg,
+  &__phone-input:focus ~ svg{
+    fill: #62d1ba;
+  }
+  &__phone:hover &__phone-input,
+  &__phone-input:focus {
+    border-color: #62d1ba;
+  }
   &__email {
+    position: relative;
     padding: 15px 0 0;
-    margin-bottom: 25px;
-    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    & svg {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      fill: #ccc;
+    }
   }
   &__email-input {
     box-sizing: border-box;
@@ -131,11 +191,20 @@
     padding: 0 0 15px;
     margin: 0;
     border: none;
+    border-bottom: 2px solid black;
     outline: none;
     color: #444;
     font-size: 17px;
     font-weight: 400;
     line-height: em(20, 17);
+  }
+  &__email:hover svg,
+  &__email-input:focus ~ svg{
+    fill: #62d1ba;
+  }
+  &__email:hover &__email-input,
+  &__email-input:focus {
+    border-color: #62d1ba;
   }
   &__additional {
     width: 100%;
@@ -145,32 +214,39 @@
     box-sizing: border-box;
     height: 142px;
     width: 100%;
+    margin-top: 10px;
     padding: 0;
     margin: 0;
-    padding: 18px;
+    padding: 16px;
+    font-family: 'Verdana', sans-serif;
     color: #444;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     line-height: em(20, 17);
     border: 2px solid black;
+    &:hover,
     &:focus {
+      border-color: #62d1ba;
       outline: none;
       box-shadow: none;
     }
   }
   &__attention {
-    margin: 0 -4px 20px;
+    margin: 0 -4px 22px;
     padding: 0;
     color: #444;
     font-size: 14px;
     font-weight: 400;
     line-height: em(18, 14);
   }
+  &__attention-desktop--visible {
+    display: none;
+  }
 }
 @media #{$tablet-widths} {
   .order-form {
     margin: 0;
-    padding: 80px 0 50px;
+    padding: 70px 0 50px;
     &__about {
       margin: 0;
       padding: 0 100px 62px 50px;
@@ -186,9 +262,9 @@
       border: none;
     }
     &__block-header {
-      width: 167px;
+      width: 220px;
       margin: 0;
-      padding: 17px 0 0;
+      padding: 10px 0 0;
       &::after {
         display: none;
       }
@@ -201,8 +277,27 @@
       padding: 0;
       margin: 0;
     }
+    &__type {
+      padding-bottom: 22px;
+    }
+    &__type-wrapper {
+      margin-bottom: 30px;
+    }
+    &__type-label {
+      font-size: 19px;
+      &:before {
+        width: 50px;
+        height: 50px;
+        margin-top: -8px;
+        margin-right: 30px;
+      }
+    }
+    &__type-input:checked ~ &__type-label::before {
+      background: #62d1ba;
+      box-shadow: inset 0 0 0 15px white;
+    }
     &__color {
-      padding: 61px 0 20px 50px;
+      padding: 61px 0 34px 50px;
       background-color: #f1f1f1;
     }
     &__color-content {
@@ -214,17 +309,28 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
+    &__color-label {
+      &::before {
+        margin-right: 26px;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 49px;
+        height: 49px;
+        border: 2px solid #444;
+      }
+    }
     &__color-wrapper {
       width: 50%;
     }
     &__name {
-      padding-top: 51px;
+      padding-top: 50px;
     }
     &__block-header--name {
-      padding: 15px 0 0;
+      padding: 16px 0 0;
     }
     &__name-content {
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
     &__name-wrapper {
       display: flex;
@@ -233,11 +339,12 @@
       border: none;
     }
     &__name-label {
-      margin: 0 26px 0 0;
+      margin: 0 35px 0 0;
       padding: 15px 0;
     }
     &__name-input {
-      padding: 17px;
+      font-size: 19px;
+      padding: 15px;
       border-bottom: 2px solid black;
     }
     &__email,
@@ -245,56 +352,101 @@
       background: #f1f1f1;
     }
     &__phone {
-      padding-top: 53px;
-      padding-bottom: 24px;
+      padding-top: 52px;
+      padding-bottom: 20px;
     }
     &__email {
       padding-bottom: 67px;
     }
     &__block-header--email,
     &__block-header--phone {
+      width: 178px;
       padding-top: 17px;
+      margin-right: 0;
+    }
+    &__phone {
+      position: relative;
+      & svg {
+        position: absolute;
+        right: 69px;
+        top: 65px;
+      }
+    }
+    &__email {
+      position: relative;
+      & svg {
+        position: absolute;
+        right: 68px;
+        top: 17px;
+      }
     }
     &__email-input,
     &__phone-input {
       padding: 17px 0 17px 17px;
+      margin: 0;
       background: inherit;
       border-bottom: 2px solid black;
     }
     &__additional {
       margin: 0 0 53px;
-      padding: 64px 50px 0;
+      padding: 65px 50px 0;
     }
     &__additional-textarea {
-      margin: 0 0 0 -30px;
-      width: 69.5%;
+      margin: 0 0 0 -50px;
+      padding: 10px;
+      font-size: 18px;
+      width: 65%;
     }
     &__attention {
       float: right;
       margin-right: 50px;
       padding-top: 15px;
+      font-size: 15px;
     }
   }
 }
 @media #{$desktop-widths} {
   .order-form {
+    padding-top: 125px;
+    padding-bottom: 95px;
     &__about {
       margin: 0;
-      padding: 0 150px 62px 190px;
+      padding: 0 200px 62px 225px;
       font-size: 17px;
       line-height: em(30, 17);
     }
     &__block-header {
-      width: 153px;
+      padding-left: 65px;
+      width: 130px;
+    }
+    &__block-header--color {
+      padding-left: 60px;
+      padding-top: 15px;
+    }
+    &__block-header--name {
+      padding-left: 60px;
+      padding-right: 10px;
+    }
+    &__block-header--phone {
+      width: 109px;
+    }
+    &__block-header--email {
+      width: 121px;
+      padding-left: 53px;
+    }
+    &__block-header--additional {
+      padding-left: 62px;
+      padding-top: 0;
+      width: 132px;
     }
     &__color {
-      padding: 61px 0 20px 50px;
+      padding: 61px 0 38px 50px;
       background-color: #f1f1f1;
     }
     &__color-content {
       padding-left: 0;
-      padding-left: 10px;
-      padding-right: 80px;
+      padding-left: 20px;
+      padding-right: 140px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -303,28 +455,57 @@
     &__color-wrapper {
       width: 33%;
     }
+    &__color-label {
+      &::before {
+        margin-right: 30px;
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 49px;
+        height: 49px;
+        border: 2px solid #444;
+      }
+    }
     &__name-wrapper {
-      padding-right: 150px;
+      padding-right: 176px;
     }
     &__name-label {
-      margin: 0 26px 0 0;
+      margin: 0 36px 0 0;
       padding: 15px 0;
     }
     &__email,
     &__phone {
       background: #f1f1f1;
-      padding-right: 200px;
+      padding-right: 225px;
+    }
+    &__phone {
+      & svg {
+        right: 230px;
+      }
+    }
+    &__email {
+      & svg {
+        right: 227px;
+      }
     }
     &__additional {
-      padding-top: 64px;
+      margin-bottom: 111px;
+      padding-top: 81px;
       padding-right: 200px;
     }
     &__additional-textarea {
-      width: 67.5%;
+      width: 61%;
       margin: -20px;
     }
     &__attention {
-      margin-right: 200px;
+      margin-right: 226px;
+      font-size: 17px;
+    }
+    &__attention-desktop--visible {
+      display: inline;
+    }
+    &__attention-desktop--invisible {
+      display: none;
     }
   }
 }
