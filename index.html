@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="picturefill.js"></script>
   <title>Мишка</title>
 </head>
 
@@ -356,23 +357,26 @@
         <div class="contacts__content contacts__content--address">г. Санкт-Петербург, <span class="contacts__address-street">ул. Большая Конюшенная,</span><span class="contacts__address-house"> д. 19/8, офис 101</span></div>
       </div>
       <div class="map">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-          <img src="img/map-mobile@1x.jpg" alt="карта">
-        </picture>
+        <div class="map--no-script">
 
-        <svg class="map__pin" width="66px" height="100px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-map-pin"></use>
-        </svg>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img src="img/map-mobile@1x.jpg" alt="карта">
+          </picture>
 
+          <svg class="map__pin" width="66px" height="100px">
+            <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-map-pin"></use>
+          </svg>
+        </div>
+        <iframe class="map--script" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601111317681!2d30.320839015804076!3d59.938760881876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1476208222264" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <button class="btn btn--contacts">напишите нам</button>
     </div>
   </main>
 
   <footer class="page-footer">
-    <a class="down-logo" href="index.html">
+    <a class="down-logo">
 
       <svg width="102px" height="34px">
         <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#logo-footer"></use>

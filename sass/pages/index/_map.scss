@@ -1,4 +1,11 @@
 .map {
+  &--no-script {
+    display: none;
+  }
+  &--script {
+    width: 100%;
+    height: 457px;
+  }
   position: relative;
   margin-left: -11.5%;
   margin-right: -11.5%;
