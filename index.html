@@ -151,6 +151,7 @@
   </svg>
 
   <!-- svg-sprite ends  -->
+
   <header class="index-header">
     <div class="top-panel">
       <nav class="main-nav" id="mainNav">
@@ -158,31 +159,28 @@
           <li class="main-nav__item main-nav__item--logo">
             <div class="main-nav__link  main-nav__link--logo main-nav__link--visible">
               <a class="top-logo">
-
-                <svg class="top-logo--desktop" width="149px" height="72px">
-                  <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#logo-desktop"></use>
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" width="86px" height="35px" alt="mishka">
+                </picture>
+                <!-- <svg class="top-logo--desktop" width="149px" height="72px">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-desktop"></use>
                 </svg>
-
                 <svg class="top-logo--tablet" width="113px" height="46px">
-                  <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#logo-tablet"></use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-tablet"></use>
                 </svg>
-
                 <svg class="top-logo--mobile" width="86px" height="35px">
-                  <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#logo-mobile"></use>
-                </svg>
-
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-mobile"></use>
+                </svg> -->
               </a>
               <button class="nav-button">
-
                 <svg class="nav-button__close-svg" width="20.5px" height="20.5px">
-                  <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-menu-open"></use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-open"></use>
                 </svg>
-
-
                 <svg class="nav-button__open-svg" width="20.5px" height="20.5px">
-                  <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-menu-close"></use>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu-close"></use>
                 </svg>
-
               </button>
             </div>
           </li>
@@ -190,20 +188,17 @@
           <li class="main-nav__item main-nav__item--form main-nav__mob"><a class="main-nav__link main-nav__link--form" href="form.html">Вязание на заказ</a></li>
           <li class="main-nav__item main-nav__item--search main-nav__mob">
             <a class="main-nav__link main-nav__link--search" href="#">
-
               <svg width="17.5px" height="17.5px">
-                <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-search"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
               </svg>
               <span>Поиск по сайту</span>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--cart main-nav__mob">
             <a class="main-nav__link main-nav__link--cart" href="#">
-
               <svg width="20px" height="19px">
-                <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-cart"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
               </svg>
-
               <span>Корзина: пока пуста</span></a>
           </li>
           <li class="main-nav__item main-nav__item--new-products"><a class="main-nav__link main-nav__link--new-products" href="#">Новые поступления</a></li>
@@ -214,21 +209,17 @@
     </div>
     <h1 class="index-header__about">Милые штуки <span>ручной</span> работы для дома</h1>
     <div class="index-header__wrapper">
-      <a class="index-header__catalog-block">
-        <div href="#" class="index-header__catalog-title">Предметы интерьера</div>
-
+      <a class="index-header__catalog-block" href="#">
+        <div class="index-header__catalog-title">Предметы интерьера</div>
         <svg width="61px" height="61px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-interior"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-interior"></use>
         </svg>
-
       </a>
-      <a class="index-header__catalog-block index-header__catalog-block--darken">
-        <div href="#" class="index-header__catalog-title">Детские игрушки</div>
-
+      <a class="index-header__catalog-block index-header__catalog-block--darken" href="#">
+        <div class="index-header__catalog-title">Детские игрушки</div>
         <svg width="61px" height="61px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-toy"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-toy"></use>
         </svg>
-
       </a>
     </div>
   </header>
@@ -238,20 +229,20 @@
       <h2 class="item-card__header">Вязаные корзинки</h2>
       <div class="item-card__banner">товар недели</div>
       <p class="item-card__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-      <ul class="item-table">
-        <li class="item-table__row">
-          <li class="item-table__data item-table__data--title">Цвет:</li>
-          <li class="item-table__data">&laquoТиффани&raquo/серый</li>
-        </li>
-        <li class="item-table__row">
-          <li class="item-table__data item-table__data--title">Диаметр:</li>
-          <li class="item-table__data">25 см</li>
-        </li>
-        <li class="item-table__row">
-          <li class="item-table__data item-table__data--title">Высота:</li>
-          <li class="item-table__data">15 см</li>
-        </li>
-      </ul>
+      <div class="item-table">
+        <div class="item-table__row">
+            <div class="item-table__data item-table__data--title">Цвет:</div>
+            <div class="item-table__data">&laquo;Тиффани&raquo;/серый</div>
+        </div>
+        <div class="item-table__row">
+            <div class="item-table__data item-table__data--title">Диаметр:</div>
+            <div class="item-table__data">25 см</div>
+        </div>
+        <div class="item-table__row">
+            <div class="item-table__data item-table__data--title">Высота:</div>
+            <div class="item-table__data">15 см</div>
+        </div>
+      </div>
       <div class="item-card__image">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg 2x">
@@ -260,57 +251,41 @@
         </picture>
       </div>
       <div class="item-card__price">Цена: 990 руб.</div>
-      <button class="btn">заказать</button>
+      <a class="btn" href="#">заказать</a>
     </div>
     <div class="advantages">
       <h3 class="block-header block-header--advantages">Коротко о нас:</h3>
       <ul class="advantages__list">
-        <div class="advantages__list-group">
-          <li class="advantages__item advantages__item--1">
-
-            <svg width="43px" height="38px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-1"></use>
-            </svg>
-
-            <span>Экологически чистые материалы</span></li>
-          <li class="advantages__item advantages__item--2">
-
-            <svg width="47px" height="35px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-3"></use>
-            </svg>
-
-            <span>Скандинавский стиль по российской цене</span></li>
-          <li class="advantages__item advantages__item--3">
-
-            <svg width="33px" height="36px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-5"></use>
-            </svg>
-
-            <span>Увеличивает лайки на фотографиях</span></li>
-        </div>
-        <div class="advantages__list-group">
-          <li class="advantages__item advantages__item--4">
-
-            <svg width="35px" height="34px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-2"></use>
-            </svg>
-
-            <span>Связано вручную с любовью и умилением</span></li>
-          <li class="advantages__item advantages__item--5">
-
-            <svg width="55px" height="23px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-4"></use>
-            </svg>
-
-            <span>Поддержка отечественного производителя</span></li>
-          <li class="advantages__item advantages__item--6">
-
-            <svg width="33px" height="32px">
-              <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-feature-6"></use>
-            </svg>
-
-            <span>Поставляется в подарочной упаковке</span></li>
-        </div>
+        <li class="advantages__item">
+          <svg width="43px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-1"></use>
+          </svg>
+          <span>Экологически чистые материалы</span></li>
+        <li class="advantages__item">
+          <svg width="47px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-3"></use>
+          </svg>
+          <span>Скандинавский стиль по российской цене</span></li>
+        <li class="advantages__item">
+          <svg width="33px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-5"></use>
+          </svg>
+          <span>Увеличивает лайки на фотографиях</span></li>
+        <li class="advantages__item">
+          <svg width="35px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-2"></use>
+          </svg>
+          <span>Связано вручную с любовью и умилением</span></li>
+        <li class="advantages__item">
+          <svg width="55px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-4"></use>
+          </svg>
+          <span>Поддержка отечественного производителя</span></li>
+        <li class="advantages__item">
+          <svg width="33px" height="36px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-feature-6"></use>
+          </svg>
+          <span>Поставляется в подарочной упаковке</span></li>
       </ul>
     </div>
     <div class="comments-block">
@@ -324,29 +299,23 @@
       </div>
       <div class="comments-buttons">
         <div class="comments-btn comments-btn--next">
-
           <svg width="51px" height="26px">
-            <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-left-arrow"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-left-arrow"></use>
           </svg>
-
         </div>
         <div class="comments-btn comments-btn--prev">
-
           <svg width="51px" height="26px">
-            <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-right-arrow"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-right-arrow"></use>
           </svg>
-
         </div>
       </div>
       <button class="btn btn--comment">написать</button>
     </div>
     <div class="contacts">
       <h4 class="contacts__header"><span>Контакты</span>
-
         <svg width="41px" height="52px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-flag"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-flag"></use>
         </svg>
-
       </h4>
       <div class="contacts__wrapper">
         <div class="contacts__title contacts__title--email">e-mail:</div>
@@ -357,7 +326,8 @@
         <div class="contacts__content contacts__content--address">г. Санкт-Петербург, <span class="contacts__address-street">ул. Большая Конюшенная,</span><span class="contacts__address-house"> д. 19/8, офис 101</span></div>
       </div>
       <div class="map">
-        <iframe class="map--script" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601111317681!2d30.320839015804076!3d59.938760881876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1476208222264" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe class="map--script" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.601111317681!2d30.320839015804076!3d59.938760881876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fc9ddd7b5%3A0x3b5582a5342a4e47!2z0JPQvdC10LfQtNC-!5e0!3m2!1sru!2sru!4v1476208222264"
+            style="border:0" allowfullscreen></iframe>
       </div>
       <button class="btn btn--contacts">напишите нам</button>
     </div>
@@ -365,44 +335,33 @@
 
   <footer class="page-footer">
     <a class="down-logo">
-
       <svg width="102px" height="34px">
-        <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#logo-footer"></use>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
       </svg>
-
     </a>
     <div class="social-block">
       <a class="social-link social--instagram" href="#">
-
         <svg width="22px" height="21px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-insta"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
         </svg>
-
       </a>
       <a class="social-link social--facebook" href="#">
-
         <svg width="15px" height="29px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-fb"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
         </svg>
-
       </a>
       <a class="social-link social--twitter" href="#">
-
         <svg width="24px" height="20px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#icon-twitter"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
         </svg>
-
       </a>
     </div>
     <a class="page-footer__developer-link"><span>Разработано</span>
-
         <svg width="40px" height="60px">
-          <use xmlns:xlink="http://www.w3.org/1999.xlink" xlink:href="#htmlacademy"></use>
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#htmlacademy"></use>
         </svg>
-
     </a>
   </footer>
-
   <div class="modal-cart">
     <header class="modal-cart__header">
       добавить в корзину

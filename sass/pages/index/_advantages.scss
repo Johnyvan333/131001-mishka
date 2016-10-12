@@ -1,105 +1,82 @@
 .advantages {
   margin: 0 30px;
-  padding: 24px 0 60px;
+  padding: 24px 0 56px;
   &__list {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 260px;
   }
   &__item {
+    box-sizing: border-box;
+    min-height: 120px;
     margin: 0;
-    padding: 32px 0 0;
+    padding: 30px 0 0;
     font-size: 17px;
     font-weight: 700;
     line-height: em(21, 17);
     & svg {
       display: block;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       fill: #59d5bc;
     }
-    &--1 {
-      width: 180px;
-    }
-    &--2 {
-      width: 200px;
-    }
-    &--3 {
-      width: 180px;
-    }
-    &--4 {
-      width: 220px;
-    }
-    &--5 {
-      & svg {
-        margin-bottom: 30px;
-      }
-    }
-    &--6 {
-      width: 200px;
-    }
+  }
+  &__item:nth-of-type(1) {
+    width: 180px;
+  }
+  &__item:nth-of-type(2),
+  &__item:nth-of-type(4),
+  &__item:nth-of-type(6) {
+    width: 220px;
+  }
+  &__item:nth-of-type(3) {
+    width: 200px;
+  }
+  &__item:nth-of-type(5) {
+    width: 260px;
   }
 }
 @media #{$tablet-widths} {
   .advantages {
     @include clearfix();
-    margin: 0 6.5%;
-    padding: 40px 0;
-    &__list-group {
-      float: left;
-      width: 50%;
+    margin: 0 6.2%;
+    padding: 41px 0;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      width: 100%;
+      height: 550px;
     }
     &__item {
-      box-sizing: border-box;
-      width: 300px;
-      padding: 55px 0 0;
+      min-height: 141px;
+      padding: 51px 0 0;
       margin: 0;
       font-size: 20px;
     }
-    &__item--1 {
-      width: 230px;
-      & svg {
-        margin-bottom: 10px;
-      }
+    &__item:nth-of-type(1),
+    &__item:nth-of-type(3) {
+      width: 295px;
+      padding-right: 75px;
     }
-    &__item--2 {
+    &__item:nth-of-type(2) {
       width: 240px;
     }
-    &__item--3 {
-      width: 220px;
+    &__item:nth-of-type(4) {
+      width: 260px;
     }
-    &__item--6 {
+    &__item:nth-of-type(5) {
+      width: 300px;
+    }
+    &__item:nth-of-type(6) {
       width: 280px;
     }
   }
 }
 @media #{$desktop-widths} {
   .advantages {
-    margin: 0 200px 0 225px;
-    padding: 50px 0 80px;
-    &__list-group {
-      width: 48%;
-    }
-    &__item {
-      margin: 0;
-      padding: 0;
-    }
-    &__item--1 {
-      padding-top: 8px;
-    }
-    &__item--2 {
-      padding-top: 55px;
-    }
-    &__item--3 {
-      padding-top: 55px;
-    }
-    &__item--4 {
-      padding-top: 5px;
-    }
-    &__item--5 {
-      padding-top: 55px;
-    }
-    &__item--6 {
-      padding-top: 58px;
-    }
+    margin: 0 220px 0 225px;
+    padding: 0;
   }
 }
