@@ -101,7 +101,7 @@
     margin-bottom: 23px;
     font-weight: bold;
   }
-  &__color-wrapper {
+  &__color-item-wrapper {
     margin-bottom: 23px;
     font-size: 17px;
     font-weight: 700;
@@ -135,10 +135,10 @@
   &__name-input:hover {
     border-color: #62d1ba;
   }
-  &__name-input:invalid,
-  &__phone-input:invalid,
+  &__additional-textarea:invalid,
   &__email-input:invalid,
-  &__additional-textarea:invalid {
+  &__name-input:invalid,
+  &__phone-input:invalid {
     border-color: #f0b1b1;
   }
   &__phone {
@@ -166,12 +166,12 @@
     font-weight: 400;
     line-height: em(20, 17);
   }
-  &__phone:hover svg,
-  &__phone-input:focus ~ svg{
+  &__phone-input:focus ~ svg,
+  &__phone:hover svg {
     fill: #62d1ba;
   }
-  &__phone:hover &__phone-input,
-  &__phone-input:focus {
+  &__phone-input:focus,
+  &__phone:hover &__phone-input {
     border-color: #62d1ba;
   }
   &__email {
@@ -198,12 +198,12 @@
     font-weight: 400;
     line-height: em(20, 17);
   }
-  &__email:hover svg,
-  &__email-input:focus ~ svg{
+  &__email-input:focus ~ svg,
+  &__email:hover svg {
     fill: #62d1ba;
   }
-  &__email:hover &__email-input,
-  &__email-input:focus {
+  &__email-input:focus,
+  &__email:hover &__email-input {
     border-color: #62d1ba;
   }
   &__additional {
@@ -224,8 +224,8 @@
     font-weight: 400;
     line-height: em(20, 17);
     border: 2px solid black;
-    &:hover,
-    &:focus {
+    &:focus,
+    &:hover {
       border-color: #62d1ba;
       outline: none;
       box-shadow: none;
@@ -253,6 +253,9 @@
       font-size: 17px;
       line-height: em(30, 17);
     }
+    &__color-wrapper,
+    &__phone-wrapper,
+    &__email-wrapper,
     &__fieldset {
       display: flex;
       justify-content: stretch;
@@ -320,7 +323,7 @@
         border: 2px solid #444;
       }
     }
-    &__color-wrapper {
+    &__color-item-wrapper {
       width: 50%;
     }
     &__name {
@@ -349,22 +352,24 @@
     }
     &__email,
     &__phone {
+      padding: 0;
+      margin: 0;
       background: #f1f1f1;
     }
-    &__phone {
+    &__phone-wrapper {
       padding-top: 52px;
       padding-bottom: 20px;
     }
-    &__email {
+    &__email-wrapper {
       padding-bottom: 67px;
     }
     &__block-header--email,
     &__block-header--phone {
-      width: 178px;
+      width: 225px;
       padding-top: 17px;
       margin-right: 0;
     }
-    &__phone {
+    &__phone-wrapper {
       position: relative;
       & svg {
         position: absolute;
@@ -372,7 +377,7 @@
         top: 65px;
       }
     }
-    &__email {
+    &__email-wrapper {
       position: relative;
       & svg {
         position: absolute;
@@ -410,7 +415,8 @@
     padding-top: 125px;
     padding-bottom: 95px;
     &__about {
-      margin: 0;
+      width: 725px;
+      margin: 0 auto;
       padding: 0 200px 62px 225px;
       font-size: 17px;
       line-height: em(30, 17);
@@ -428,20 +434,31 @@
       padding-right: 10px;
     }
     &__block-header--phone {
-      width: 109px;
+      width: 136px;
+      padding-left: 55px;
     }
     &__block-header--email {
-      width: 121px;
-      padding-left: 53px;
+      width: 151px;
+      padding-left: 43px;
     }
     &__block-header--additional {
       padding-left: 62px;
       padding-top: 0;
       width: 132px;
     }
+    &__type {
+      width: 1050px;
+      margin: 0 auto;
+    }
     &__color {
-      padding: 61px 0 38px 50px;
+      margin: 0;
+      padding: 0;
       background-color: #f1f1f1;
+    }
+    &__color-wrapper {
+      width: 1100px;
+      margin: 0 auto;
+      padding: 61px 0 38px 50px;
     }
     &__color-content {
       padding-left: 0;
@@ -452,7 +469,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    &__color-wrapper {
+    &__color-item-wrapper {
       width: 33%;
     }
     &__color-label {
@@ -466,6 +483,10 @@
         border: 2px solid #444;
       }
     }
+    &__name {
+      width: 1050px;
+      margin: 0 auto;
+    }
     &__name-wrapper {
       padding-right: 176px;
     }
@@ -475,26 +496,34 @@
     }
     &__email,
     &__phone {
+      margin: 0;
+      padding: 0;
       background: #f1f1f1;
-      padding-right: 225px;
     }
-    &__phone {
+    &__phone-wrapper {
+      width: 865px;
+      margin: 0 auto;
+      padding-right: 215px;
+      padding-top: 48px;
       & svg {
-        right: 230px;
+        right: 215px;
       }
     }
-    &__email {
+    &__email-wrapper {
+      width: 865px;
+      margin: 0 auto;
+      padding-right: 215px;
       & svg {
-        right: 227px;
+        right: 215px;
       }
     }
     &__additional {
-      margin-bottom: 111px;
-      padding-top: 81px;
-      padding-right: 200px;
+      width: 1050px;
+      margin: 0 auto 111px;
+      padding-top: 83px;
     }
     &__additional-textarea {
-      width: 61%;
+      width: 66.7%;
       margin: -20px;
     }
     &__attention {

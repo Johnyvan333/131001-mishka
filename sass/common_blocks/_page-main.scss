@@ -24,6 +24,10 @@ img {
 }
 @media #{$desktop-widths} {
   body {
+    min-width: 1150px;
+  }
+  .wrapper {
     width: 1150px;
+    margin: 0 auto;
   }
 }

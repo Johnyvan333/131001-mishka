@@ -209,18 +209,17 @@
       margin: 0;
       width: 100%;
       font-size: 17px;
+      border-bottom: none;
     }
     &__link--catalog {
       padding-top: 0;
       padding-left: 50px;
       text-align: left;
       border-right: 1px solid #ececec;
-      border-bottom: 1px solid #ececec;
     }
     &__link--form {
       padding-left: 33px;
       text-align: left;
-      border-bottom: 1px solid #ececec;
     }
     &__link--logo {
       text-align: left;
@@ -233,7 +232,6 @@
     &__link--cart {
       padding-right: 50px;
       text-align: right;
-      border-bottom: 1px solid #ececec;
       & svg {
         padding-left: 33px;
       }

@@ -8,11 +8,15 @@
   padding-left: 28%;
   padding-top: 10px;
   cursor: pointer;
-  &:hover svg {
-    fill: #666;
+  & img {
+    width: 86px;
+    height: 35px;
   }
-  &:active svg {
-    fill: #b2b2b2;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.35;
   }
 }
 .down-logo {
@@ -22,7 +26,7 @@
   .top-logo {
     padding-top: 22px;
     padding-left: 3.5%;
-    & picture {
+    & img {
       width: 113px;
       height: 46px;
     }
@@ -45,7 +49,7 @@
 @media #{$desktop-widths} {
   .top-logo {
     padding: 10px 0 0 6%;
-    & picture {
+    & img {
       width: 149px;
       height: 72px;
     }

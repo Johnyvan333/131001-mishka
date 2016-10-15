@@ -39,9 +39,7 @@
 @media #{$tablet-widths} {
   .item-card {
     margin: 0;
-    padding: 0 6.5%;
-    padding-top: 30px;
-    padding-bottom: 75px;
+    padding: 30px 6.5% 75px;
     background: url('../img/bg-zigzag-line.svg') 0 100% repeat-x;
     background-size: 100%;
     &__header {
@@ -91,8 +89,14 @@
 }
 @media #{$desktop-widths} {
   .item-card {
-    margin: 0;
-    padding: 106px 50px 107px 220px;
+    margin: 0 auto;
+    padding: 0;
+    &__wrapper {
+      box-sizing: border-box;
+      width: 1150px;
+      margin: 0 auto;
+      padding: 106px 50px 107px 220px;
+    }
     &__header {
       width: 800px;
       margin-bottom: 47px;

@@ -1,11 +1,18 @@
 .top-panel {
   height: 79px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 @media #{$tablet-widths} {
   .top-panel {
     height: 88px;
     background: white;
+  }
+}
+@media #{$desktop-widths} {
+  .top-panel {
+    height: 88px;
+    background: white;
+    border-bottom: 1px solid #ececec;
   }
 }

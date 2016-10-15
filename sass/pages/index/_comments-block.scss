@@ -6,8 +6,8 @@
 @media #{$tablet-widths} {
   .comments-block {
     margin: 0;
-    padding: 120px 6.5% 140px;
-    background: #fff url('../img/review@1x.jpg') no-repeat 0 40px;
+    padding: 78px 6.5% 140px;
+    background: #fff url('../img/review@1x.jpg') no-repeat 0 0;
     @media #{$retina} {
       background-image: url('../img/review@2x.jpg');
       background-size: 350px auto;
@@ -16,8 +16,9 @@
 }
 @media #{$desktop-widths} {
   .comments-block {
-    margin: 0 0 0 50px;
-    padding: 67px 0 205px 175px;
-    background-position: 0 -6px;
+    width: 925px;
+    margin: 0 auto;
+    padding: 67px 0 205px 225px;
+    background-position: 50px -6px;
   }
 }

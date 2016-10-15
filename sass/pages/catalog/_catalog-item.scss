@@ -1,7 +1,9 @@
 .catalog-item {
   width: 260px;
+  margin: 0 auto;
   text-decoration: none;
   color: black;
+  cursor: pointer;
   &:hover &__description {
     box-shadow: 0 5px 10px 0 #888;
   }
@@ -9,20 +11,21 @@
     box-shadow: 0 2px 4px 0 #aaa;
   }
   &:hover &__price,
-  &:hover &__title {
+  &:hover &__title-link {
     color: #666;
   }
   &:active &__price,
-  &:active &__title {
+  &:active &__title-link {
     color: #b2b2b2;
   }
-  &:hover &__price svg {
+  &:hover &__price-svg {
     fill: #63d1bb;
   }
-  &:active &__price svg {
+  &:active &__price-svg {
     fill: #d0f1ea;
   }
   &__img {
+    display: block;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -39,6 +42,10 @@
     font-size: 17px;
     font-weight: 700;
     line-height: em(24, 17);
+  }
+  &__title-link {
+    text-decoration: none;
+    color: black;
   }
   &__info {
     margin: 0;
